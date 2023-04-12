@@ -1,0 +1,98 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.about {
+  padding: 32px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  .about-top {
+
+    .about-card {
+      padding: 14px 18px 38px 18px;
+      max-width: 432px;
+      border-radius: 30px;
+
+      &__descr {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $mainColor;
+
+        div {
+          margin-right: 24px;
+        }
+
+        span {
+          margin-right: 6px;
+          padding: 5px 7px;
+          font-weight: 400;
+          font-size: 19px;
+          line-height: 20px;
+          border-radius: 10px;
+          background-color: $whiteColor
+        }
+      }
+
+      &__title {
+        margin-bottom: 11px;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 74px;
+        color: $mainColor;
+      }
+
+      &__list {
+        @include clearListStyles;
+
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        max-width: 220px;
+      }
+
+      &__item {
+        display: flex;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+
+      &__marker {
+        margin-right: 8px;
+      }
+
+      &__text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+
+        span {
+          padding: 2px;
+          background-color: $whiteColor;
+          border-radius: 10px;
+        }
+      }
+
+      &__btn {
+        @include clearBtnStyles;
+        padding: 17px 80px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 31px;
+        background: $whiteColor;
+        border-radius: 30px;
+      }
+
+      &:first-child {
+        background: linear-gradient(132deg, #FFC700 0%, #FFF625 100%);
+      }
+    }
+  }
+}

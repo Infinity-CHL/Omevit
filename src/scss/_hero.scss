@@ -1,0 +1,170 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.hero {
+  position: relative;
+  padding-top: 35px;
+
+  .hero-container {
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 502px;
+    z-index: 1;
+
+    &__title {
+      margin-bottom: 12px;
+      font-weight: 400;
+      font-size: 62px;
+      line-height: 68px;
+      color: $whiteColor;
+
+      span {
+        font-weight: 700;
+        font-size: 85px;
+        color: #FF1414;
+      }
+    }
+
+    &__list {
+      @include clearListStyles;
+      margin-bottom: 12px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75px;
+        height: 69px;
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 90px;
+        background-color: #D1F3FF;
+        box-shadow: 0px 1px 15px 7px rgba(163, 163, 163, 0.3);
+        border-radius: 24px;
+        color: #FF1414;
+        z-index: 2;
+      }
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    &__content {
+      padding: 22px;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 24px;
+      color: $mainColor;
+      background-color: #D1F3FF;
+      border-radius: 24px;
+      z-index: 1;
+
+      div {
+        margin-right: 10px;
+      }
+
+      span {
+        margin-right: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 57px;
+        height: 57px;
+        background: $whiteColor;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 100px;
+      }
+    }
+
+    .capsuls {
+      padding: 6px 20px;
+
+      &__first {
+        transform: translateY(6px);
+      }
+
+      &__second {
+        transform: translateX(-7px);
+      }
+    }
+
+  }
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -130px;
+      width: 925px;
+      height: 417px;
+      background: linear-gradient(180deg, #D2A0E6 42.62%, rgba(210, 160, 230, 0) 100%);
+    }
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   bottom: -190px;
+    //   width: 925px;
+    //   height: 417px;
+    //   background: linear-gradient(180deg, #D2A0E6 42.62%, rgba(210, 160, 230, 0) 100%);
+    //   transform: rotate(-180deg);
+    // }
+
+    &__img {
+      position: absolute;
+      top: -140px;
+      animation: rotate 40s linear 1s infinite;
+      z-index: -1;
+    }
+
+    &__content {
+      animation: bounce 4s linear 1s infinite;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/shine.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+  }
+
+  .hero-btn {
+    @include clearBtnStyles;
+
+    margin: 0 auto;
+    padding: 23px 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFEA00;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 62px;
+    color: $mainColor;
+    z-index: 2;
+  }
+}

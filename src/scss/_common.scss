@@ -1,0 +1,73 @@
+@import '_variables.scss';
+@import '_fonts.scss';
+
+
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'TildaSans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #D2A0E6;
+}
+
+img {
+  object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+picture {
+  font-size: 0;
+}
+
+.container {
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 55px;
+  color: $whiteColor;
+
+  span {
+    color: #000046;
+  }
+}
