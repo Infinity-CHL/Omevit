@@ -1,0 +1,89 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.confidence {
+  &__title {
+    margin-bottom: 30px;
+  }
+  .confidence-list {
+    @include clearListStyles;
+
+    &__item {
+      border-radius: 30px;
+      box-shadow: 0px 1px 10px 7px rgba(163, 163, 163, 0.1);
+
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+  .confidence-card {
+    position: relative;
+    padding: 100px 140px;
+    background-color: #E0F9FF;
+
+    &:nth-child(odd) {
+      padding-left: 50%;
+    }
+
+    &:first-child {
+      background-image: url(../img/bilberry_transparent.png);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+    }
+
+    &:nth-child(2) {
+      background-color: #FFDB94;
+      background-image: url(../img/Anchous1.png);
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+
+    &:nth-child(3) {
+      padding-top: 47px;
+      padding-bottom: 47px;
+      background-color: #B0E0E4;
+      background-image: url(../img/omevit.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+    &__title {
+      margin-bottom: 11px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__descr {
+      max-width: 440px;
+      font-size: 22px;
+      line-height: 29px;
+    }
+
+    &__link {
+      width: 120px;
+      height: 123px;
+      border-radius: 100%;
+      background-color: $whiteColor;
+      position: absolute;
+      top: 32px;
+      right: 35px;
+
+      .circle {
+        position: absolute;
+        top: -19px;
+        left: -19px;
+        animation: rotate 40s linear 1s infinite;
+      }
+
+      a svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

@@ -91,6 +91,19 @@
 
     .capsuls {
       padding: 6px 20px;
+      padding-right: 75px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        right: 10px;
+        width: 67px;
+        height: 37px;
+        background-image: url(../img/cur_capsule.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
       &__first {
         transform: translateY(6px);
