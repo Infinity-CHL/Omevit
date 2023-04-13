@@ -1,0 +1,54 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.contacts {
+  padding: 70px 0 100px;
+
+  &__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts-card {
+    padding: 158px 135px 98px;
+    max-width: 918px;
+    background: rgba(255, 255, 255, 0.002);
+    box-shadow: 0px 1px 30px 10px $whiteColor;
+    border-radius: 50px;
+    color: $whiteColor;
+    background-image: url(../img/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+
+    &__title {
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 67px;
+      line-height: 67px;
+    }
+
+    &__subtitle {
+      margin-bottom: 50px;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 29px;
+    }
+
+    &__btn {
+      @include clearBtnStyles;
+
+      padding: 19px 76px;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 40px;
+      color: $mainColor;
+      background-color: #FCF800;
+      border-radius: 30px;
+    }
+  }
+}

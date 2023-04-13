@@ -1,0 +1,70 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.questions {
+  padding: 32px 0;
+  font-family: 'TildaSansVF';
+  font-weight: 600;
+  color: $whiteColor;
+  font-size: 25px;
+  line-height: 29px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  &__tel {
+    padding: 25px 208px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    line-height: 57px;
+    background: #ED552C;
+    box-shadow: 0px 1px 10px 7px rgba(163, 163, 163, 0.2);
+    border-radius: 50px;
+  }
+
+  span {
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    @include clearBtnStyles;
+
+    padding: 25px 124px;
+    margin-bottom: 22px;
+    font-size: 38px;
+    line-height: 57px;
+    background-color: #FFEA7F;
+    border-radius: 50px;
+  }
+
+  svg {
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    @include clearListStyles;
+
+    padding: 27px 38px;
+    display: flex;
+    align-items: center;
+    background-color: $whiteColor;
+    box-shadow: 0px 1px 10px 7px rgba(163, 163, 163, 0.1);
+    border-radius: 40px;
+  }
+}
