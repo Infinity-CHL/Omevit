@@ -114,22 +114,6 @@
     }
   }
 
-  .footer {
-    &::before {
-      left: 0;
-      width: 486px;
-      height: 282px;
-      bottom: -50px;
-    }
-
-    &::after {
-      right: 0;
-      width: 450px;
-      height: 250px;
-      bottom: -50px;
-    }
-  }
-
   .modal {
     padding: 70px 0;
     height: 100%;
@@ -335,7 +319,6 @@
       }
 
       .about-card {
-        max-width: 336px;
         font-family: 'TildaSansVF';
 
         &__descr {
@@ -370,7 +353,7 @@
     }
 
     .about-bottom {
-      max-width: 336px;
+      max-width: $card-mobile-width;
       flex-direction: column-reverse;
 
       .bottom-content {
@@ -666,13 +649,11 @@
   }
 
   .footer {
-    padding-bottom: 318px;
-
-    &::before {
-      background-image: url(../img/mobile/footer.png);
+    img:nth-child(1) {
+      display: none;
     }
 
-    &::after {
+    img:nth-child(2) {
       display: none;
     }
 
