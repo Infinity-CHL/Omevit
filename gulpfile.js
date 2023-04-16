@@ -64,7 +64,7 @@ const htmlInclude = () => {
 }
 
 const imgToApp = () => {
-  return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.jpeg'])
+  return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.svg'])
     .pipe(dest('./app/img'))
 }
 
@@ -119,10 +119,10 @@ const watchFiles = () => {
   watch('./src/**/*.html', htmlInclude)
   watch('./src/img/**/*.jpg', imgToApp)
   watch('./src/img/**/*.png', imgToApp)
-  watch('./src/img/**/*.jpeg', imgToApp)
+  watch('./src/img/**/*.svg', imgToApp)
   watch('./src/img/svg/**.svg', imgToApp)
   watch('./src/resources/**', resources)
-  watch('./src/fonts/**.woff', fonts)
+  watch('./src/fonts/**.woff2', fonts)
   watch('./src/fonts/**.woff', fonts)
   watch('./src/js/**/*.js', scripts)
 }
@@ -130,11 +130,11 @@ const watchFiles = () => {
 
 exports.default = series(clean, parallel(htmlInclude, scripts, fonts, imgToApp, resources), styles, watchFiles)
 
-// const images = () => {
-//   return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/*.svg', 'src/img/**/*.jpeg', ])
-//     .pipe(image())
-//     .pipe(dest('./app/img'))
-// }
+const images = () => {
+  return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/*.svg', 'src/img/**/*.jpeg', ])
+    .pipe(image())
+    .pipe(dest('./app/img'))
+}
 
 const htmlIncludeBuild = () => {
   return src('./src/index.html')

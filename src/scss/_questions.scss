@@ -9,6 +9,14 @@
   font-size: 25px;
   line-height: 29px;
 
+  .tel-mobile {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: none;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -36,6 +44,12 @@
     background: #ED552C;
     box-shadow: 0px 1px 10px 7px rgba(163, 163, 163, 0.2);
     border-radius: 50px;
+    transition: all .2s linear;
+
+    &:hover {
+      background-color: $whiteColor;
+      color: $mainColor;
+    }
   }
 
   span {
@@ -51,9 +65,14 @@
     line-height: 57px;
     background-color: #FFEA7F;
     border-radius: 50px;
+    transition: all .2s linear;
+
+    &:hover {
+      background-color: $whiteColor;
+    }
   }
 
-  svg {
+  &__icon {
     margin-bottom: 22px;
   }
 
@@ -61,10 +80,22 @@
     @include clearListStyles;
 
     padding: 27px 38px;
+    margin-bottom: 49px;
     display: flex;
     align-items: center;
     background-color: $whiteColor;
     box-shadow: 0px 1px 10px 7px rgba(163, 163, 163, 0.1);
     border-radius: 40px;
+  }
+
+  &__copyright {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+
+    a {
+      display: inline-block;
+      border-bottom: 1px solid $whiteColor;
+    }
   }
 }

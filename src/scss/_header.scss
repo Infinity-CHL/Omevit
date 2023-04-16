@@ -2,7 +2,7 @@
 @import 'variables.scss';
 
 .header {
-  padding-top: 100px;
+  padding-top: 30px;
   position: relative;
   z-index: 1;
 
@@ -27,6 +27,34 @@
 
     &__item:not(:last-child) {
       margin-right: 15px;
+    }
+  }
+
+  .header-m {
+    margin-bottom: 22px;
+    padding: 14px 20px;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.62);
+    backdrop-filter: blur(5.5px);
+    border-radius: 0px 0px 10px 10px;
+
+    &__menu {
+      @include clearBtnStyles;
+    }
+
+    &__btn {
+      @include clearBtnStyles;
+      padding: 8px 12px;
+      background: #FFEA00;
+      box-shadow: 0px 0px 12.8983px 0.67886px $whiteColor;
+      border-radius: 11.026px;
+      font-weight: 700;
+      font-size: 13.2782px;
+      line-height: 131.9%;
+      text-transform: uppercase;
     }
   }
 }

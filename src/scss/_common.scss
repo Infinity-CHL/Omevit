@@ -1,6 +1,6 @@
 @import '_variables.scss';
 @import '_fonts.scss';
-
+@import 'mixin.scss';
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,12 @@ html {
 }
 
 body {
+  position: relative;
   background-color: #D2A0E6;
+}
+
+body .modal.active {
+  overflow-y: hidden;
 }
 
 img {
@@ -44,7 +49,6 @@ picture {
   max-width: $containerMaxWidth;
   margin: 0 auto;
   padding: 0 15px;
-  overflow: hidden;
 }
 
 .visually-hidden {
@@ -55,6 +59,13 @@ picture {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.modal {
+  .hidden.capsule-card {
+    display: block;
+    animation: fadeIn .5s linear 1;
+  }
 }
 
 .is-visible {
@@ -69,5 +80,40 @@ picture {
 
   span {
     color: #000046;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  &:hover + .tooltip__content {
+    display: block;
+  }
+
+  &__marker {
+    @include clearBtnStyles;
+  }
+
+  &__content {
+    padding: 15px;
+    position: absolute;
+    top: -10px;
+    left: calc(100% + 15px);
+    display: none;
+    background-color: $whiteColor;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+    width: 280px;
+    color: $mainColor;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    z-index: 999;
+
+    ul {
+      list-style-type: disc;
+    }
   }
 }
