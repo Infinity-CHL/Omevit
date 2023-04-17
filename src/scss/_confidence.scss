@@ -59,6 +59,7 @@
     }
 
     &__descr {
+      word-wrap: break-word;
       max-width: 440px;
       font-size: 22px;
       line-height: 29px;

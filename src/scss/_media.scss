@@ -1,5 +1,5 @@
-@import '_mixin.scss';
-@import '_variables.scss';
+@import "_mixin.scss";
+@import "_variables.scss";
 
 @media (max-width: 1750px) {
   .footer {
@@ -163,6 +163,7 @@
 @media (max-width: 768px) {
   .container {
     max-width: 405px;
+    margin: 0;
   }
 
   .menu {
@@ -172,7 +173,6 @@
   .header {
     padding-top: 0;
     .header-container {
-
       &__logo {
         padding-left: 19px;
         width: 56px;
@@ -189,7 +189,6 @@
   }
 
   .hero {
-
     .menu.fixed {
       display: none;
     }
@@ -208,7 +207,6 @@
       align-items: center;
 
       &__item {
-
         &:nth-child(3) span svg {
           width: 29px;
           height: 43px;
@@ -263,7 +261,7 @@
         padding-right: 26px;
 
         &::before {
-        display: none;;
+          display: none;
         }
       }
     }
@@ -325,7 +323,7 @@
       }
 
       .about-card {
-        font-family: 'TildaSansVF';
+        font-family: "TildaSansVF";
 
         &__descr {
           & div {
@@ -438,7 +436,6 @@
   }
 
   .result {
-
     &__title {
       margin-bottom: 28px;
       max-width: 292px;
@@ -462,7 +459,7 @@
         }
 
         &__descr {
-          font-family: 'TildaSansVF';
+          font-family: "TildaSansVF";
           font-size: 18px;
           line-height: 26px;
         }
@@ -559,6 +556,7 @@
     }
 
     .feedback-item {
+      width: 100% !important;
 
       &__comment {
         font-size: 18px;
@@ -569,9 +567,9 @@
 
   .contacts {
     .contacts-card {
-      padding: 336px 21px 53px;
+      padding: 50px 21px 53px;
       max-width: 336px;
-      font-family: 'TildaSansVF';
+      font-family: "TildaSansVF";
       text-align: left;
 
       &__title {
@@ -587,71 +585,71 @@
   }
 
   .questions {
-      &__title {
-        font-size: 34px;
-        line-height: 101.2%;
+    &__title {
+      font-size: 34px;
+      line-height: 101.2%;
+    }
+
+    &__subtitle {
+      max-width: 245px;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+    }
+
+    &__tel {
+      display: none;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    .tel-mobile {
+      @include clearBtnStyles;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      padding: 23px 52px;
+      font-size: 24px;
+      line-height: 118.2%;
+      background-color: #ed552c;
+      border-radius: 80px;
+
+      & svg {
+        margin-right: 12px;
       }
+    }
 
-      &__subtitle {
-        max-width: 245px;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
+    .mobile-btn {
+      @include clearBtnStyles;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      padding: 23px 52px;
+      font-size: 24px;
+      line-height: 118.2%;
+      background-color: #ffea7f;
+      border-radius: 56px;
+
+      & svg {
+        margin-right: 12px;
       }
+    }
 
-      &__tel {
-        display: none;
-      }
+    &__list {
+      margin-bottom: 46px;
+      padding: 12px 19px;
+      max-width: 336px;
+    }
 
-      &__btn {
-        display: none;
-      }
-
-      .tel-mobile {
-        @include clearBtnStyles;
-        margin-bottom: 6px;
-        display: flex;
-        align-items: center;
-        padding: 23px 52px;
-        font-size: 24px;
-        line-height: 118.2%;
-        background-color:#ED552C;
-        border-radius: 80px;
-
-        & svg {
-          margin-right: 12px;
-        }
-      }
-
-      .mobile-btn {
-        @include clearBtnStyles;
-        margin-bottom: 22px;
-        display: flex;
-        align-items: center;
-        padding: 23px 52px;
-        font-size: 24px;
-        line-height: 118.2%;
-        background-color:#FFEA7F;
-        border-radius: 56px;
-
-        & svg {
-          margin-right: 12px;
-        }
-      }
-
-      &__list {
-        margin-bottom: 46px;
-        padding: 12px 19px;
-        max-width: 336px;
-      }
-
-      &__copyright {
-        margin-bottom: 22px;
-        max-width: 343px;
-        font-size: 18px;
-        line-height: 143%;
-        text-align: center;
-      }
+    &__copyright {
+      margin-bottom: 22px;
+      max-width: 343px;
+      font-size: 18px;
+      line-height: 143%;
+      text-align: center;
+    }
   }
 
   .footer {
