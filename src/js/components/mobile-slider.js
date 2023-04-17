@@ -1,17 +1,17 @@
 
 const slider = document.querySelector('.about-top');
-console.log(slider);
+
 let mySwiper;
 
 function mobileSlider() {
 	if (window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
 		mySwiper = new Swiper(slider, {
 			slidesPerView: 1,
-			spaceBetween: 10,
+			spaceBetween: 20,
+      
       autoplay: {
         delay: 3000,
       },
-			// slideClass: 'list-item',
 		});
 
 		slider.dataset.mobile = 'true';

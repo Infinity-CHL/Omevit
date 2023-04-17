@@ -6,12 +6,13 @@
     &::before {
       width: 400px;
       height: 250px;
+      bottom: -96px;
     }
 
     &::after {
       width: 400px;
       height: 250px;
-      bottom: -46px;
+      bottom: -106px;
     }
   }
 }
@@ -306,6 +307,11 @@
 
     .about-top {
       overflow: visible;
+
+      .swiper-wrapper {
+        overflow-x: hidden;
+      }
+
       &::before {
         width: 344px;
         height: 25px;
