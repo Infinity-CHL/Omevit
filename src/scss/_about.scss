@@ -1,7 +1,8 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .about {
+  width: 100%;
   padding: 32px;
   overflow: hidden;
 
@@ -58,7 +59,7 @@
           font-size: 19px;
           line-height: 20px;
           border-radius: 10px;
-          background-color: $whiteColor
+          background-color: $whiteColor;
         }
       }
 
@@ -110,20 +111,20 @@
         line-height: 31px;
         background: $whiteColor;
         border-radius: 30px;
-        transition: all .2s linear;
+        transition: all 0.2s linear;
 
         &:hover {
           color: $whiteColor;
-          background-color: #FF1414;
+          background-color: #ff1414;
         }
       }
 
       &:first-child {
-        background: linear-gradient(132deg, #FFC700 0%, #FFF625 100%);
+        background: linear-gradient(132deg, #ffc700 0%, #fff625 100%);
       }
 
       &:nth-child(2) {
-        background: linear-gradient(235deg, #03C700 0%, #92FF5C 100%);
+        background: linear-gradient(235deg, #03c700 0%, #92ff5c 100%);
       }
     }
 
@@ -160,19 +161,20 @@
 
   .about-bottom {
     display: flex;
+    justify-content: center;
     position: relative;
 
     .bilberry {
       position: absolute;
 
       &.right {
-        right: -400px;
+        right: -330px;
       }
 
       &.left {
         rotate: 180deg;
         bottom: 0;
-        left: -400px;
+        left: -330px;
       }
     }
 
@@ -193,7 +195,7 @@
     .bottom-content {
       padding: 34px 0 155px 55px;
       max-width: 820px;
-      font-family: 'TildaSans';
+      font-family: "TildaSans";
       background: $whiteColor;
       box-shadow: 0px 1px 10px 7px rgba(163, 163, 163, 0.1);
       border-radius: 30px;

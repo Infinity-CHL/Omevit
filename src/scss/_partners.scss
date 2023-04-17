@@ -1,7 +1,9 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .partners {
+  width: 75%;
+
   padding: 55px 0;
 
   &__title {

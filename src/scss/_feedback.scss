@@ -1,7 +1,8 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .feedback {
+  width: 80%;
   padding-bottom: 55px;
 
   &__title {
@@ -17,7 +18,7 @@
 
     .feedback-item {
       margin-bottom: 60px;
-      width: 100%;
+      width: 48%;
       max-width: 560px;
 
       &:nth-child(odd) {
@@ -32,7 +33,7 @@
         border-radius: 10px;
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -24px;
           left: 36px;

@@ -1,7 +1,9 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .confidence {
+  width: 80%;
+
   &__title {
     margin-bottom: 30px;
   }
@@ -21,7 +23,7 @@
   .confidence-card {
     position: relative;
     padding: 100px 140px;
-    background-color: #E0F9FF;
+    background-color: #e0f9ff;
 
     &:nth-child(odd) {
       padding-left: 50%;
@@ -34,7 +36,7 @@
     }
 
     &:nth-child(2) {
-      background-color: #FFDB94;
+      background-color: #ffdb94;
       background-image: url(../img/Anchous1.png);
       background-repeat: no-repeat;
       background-position: right center;
@@ -43,7 +45,7 @@
     &:nth-child(3) {
       padding-top: 47px;
       padding-bottom: 47px;
-      background-color: #B0E0E4;
+      background-color: #b0e0e4;
       background-image: url(../img/omevit.png);
       background-repeat: no-repeat;
       background-position: left center;

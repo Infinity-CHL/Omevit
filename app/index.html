@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Omevit</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="css/main.min.css">
-  <title>Omevit</title>
-</head>
-
-<body>
-  <h1 class="visually-hidden">Омевит</h1>
-  <header class="header">
+  <body>
+    <h1 class="visually-hidden">Омевит</h1>
+    <header class="header">
   <div class="container">
     <div class="header-m">
       <button class="header-m__menu">
@@ -55,102 +62,121 @@
   </div>
 </header>
 
-  <main class="main">
-    <section class="hero">
+    <main class="main">
+      <section class="hero">
   <div class="container">
     <div class="hero-container">
       <div class="hero-left">
-        <h2 class="hero-left__title">
+        <h2 class="hero-left__title fade-right">
           <span>Красота и молодость</span>
-          <br> в&nbspдвух капсулах
+          <br />
+          в&nbspдвух капсулах
         </h2>
         <div class="hero-left__mobile">
-          <img src="./img/mobile/hero.png" alt="омевит">
-          <img src="./img/mobile/hero2.png" class="mobile-dec rotate">
+          <img src="./img/mobile/hero.png" alt="омевит" />
+          <img src="./img/mobile/hero2.png" class="mobile-dec rotate" />
         </div>
         <ul class="hero-left__list">
           <li class="hero-left__item">
             <span class="icon">13</span>
-            <div class="hero-left__content">
-              полезных компонентов
-            </div>
+            <div class="hero-left__content">полезных компонентов</div>
           </li>
           <li class="hero-left__item">
             <span class="icon">2</span>
             <div class="hero-left__content capsuls">
               <div class="">вида капсул</div>
 
-                <span>
-                  <div class="tooltip">
-                    <button class="tooltip__marker">
-                      <img  class="capsuls__first" src="./img/untitled_8.png.png" alt="капсула">
-                    </button>
-                  </div>
-                  <div class="tooltip__content">
-                    <b>Содержит ОМЕГА-3:</b>
-                    <ul>
-                      <li>Полиненасыщенные жирные кислоты</li>
-                      <li>Докозагексаеновая кислота DHA</li>
-                      <li>Эйкозапентаеновая кислота EPA</li>
-                    </ul>
-                  </div>
-                </span>
-                <span>
-                  <div class="tooltip">
-                    <button class="tooltip__marker">
-                      <img class="capsuls__second" src="./img/untitled_12.png.png" alt="капсула">
-                    </button>
-                  </div>
-                  <div class="tooltip__content">
-                      <b>КАПСУЛА Б</b>
-                      <p>Содержит витамины и минералы:</p>
-                      <ul>
-                        <li>Лютеин</li>
-                        <li>Витамин А </li>
-                        <li>Зеаксантин</li>
-                        <li>Витамин D3</li>
-                        <li>Бета-каротин</li>
-                        <li>Цинк</li>
-                        <li>Экстракт виноградных косточкек</li>
-                        <li>Витамин Е</li>
-                        <li>Экстракт черники</li>
-                      </ul>
-                  </div>
-                </span>
+              <span>
+                <div class="tooltip">
+                  <button class="tooltip__marker">
+                    <img
+                      class="capsuls__first"
+                      src="./img/untitled_8.png.png"
+                      alt="капсула"
+                    />
+                  </button>
+                </div>
+                <div class="tooltip__content">
+                  <b>Содержит ОМЕГА-3:</b>
+                  <ul>
+                    <li>Полиненасыщенные жирные кислоты</li>
+                    <li>Докозагексаеновая кислота DHA</li>
+                    <li>Эйкозапентаеновая кислота EPA</li>
+                  </ul>
+                </div>
+              </span>
+              <span>
+                <div class="tooltip">
+                  <button class="tooltip__marker">
+                    <img
+                      class="capsuls__second"
+                      src="./img/untitled_12.png.png"
+                      alt="капсула"
+                    />
+                  </button>
+                </div>
+                <div class="tooltip__content">
+                  <b>КАПСУЛА Б</b>
+                  <p>Содержит витамины и минералы:</p>
+                  <ul>
+                    <li>Лютеин</li>
+                    <li>Витамин А</li>
+                    <li>Зеаксантин</li>
+                    <li>Витамин D3</li>
+                    <li>Бета-каротин</li>
+                    <li>Цинк</li>
+                    <li>Экстракт виноградных косточкек</li>
+                    <li>Витамин Е</li>
+                    <li>Экстракт черники</li>
+                  </ul>
+                </div>
+              </span>
             </div>
           </li>
           <li class="hero-left__item">
             <span class="icon">
-              <svg width="36" height="54" viewBox="0 0 36 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="36"
+                height="54"
+                viewBox="0 0 36 54"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g clip-path="url(#clip0_1_87)">
-                <path d="M34.6861 21.1714H21.304L26.6107 0.830627L0.769409 32.1724H14.1515L8.8448 52.5132L34.6861 21.1714Z" fill="#FF1414"/>
+                  <path
+                    d="M34.6861 21.1714H21.304L26.6107 0.830627L0.769409 32.1724H14.1515L8.8448 52.5132L34.6861 21.1714Z"
+                    fill="#FF1414"
+                  />
                 </g>
                 <defs>
-                <clipPath id="clip0_1_87">
-                <rect width="35.9932" height="53.3438" fill="white" transform="translate(0.00341797)"/>
-                </clipPath>
+                  <clipPath id="clip0_1_87">
+                    <rect
+                      width="35.9932"
+                      height="53.3438"
+                      fill="white"
+                      transform="translate(0.00341797)"
+                    />
+                  </clipPath>
                 </defs>
               </svg>
             </span>
-            <div class="hero-left__content">
-              Усиленная формула
-            </div>
+            <div class="hero-left__content">Усиленная формула</div>
           </li>
         </ul>
-        <img src="./img/scroll_down_3.svg.png" alt="" class="hero-left__img">
+        <img src="./img/scroll_down_3.svg.png" alt="" class="hero-left__img" />
       </div>
       <div class="hero-right">
-        <img class="hero-right__content" src="./img/__1_small.png.png">
-        <img class="hero-right__caps"  src="./img/round_4-8.png.png">
-        <img src="./img/atom.png"  class="hero-right__decor rotate">
-        <img src="./img/atom2.png"  class="hero-right__decor reverse-rotate">
-        <img src="./img/shine.png"  class="hero-right__decor shine">
+        <img class="hero-right__content" src="./img/__1_small.png.png" />
+        <img class="hero-right__caps" src="./img/round_4-8.png.png" />
+        <img src="./img/atom.png" class="hero-right__decor rotate" />
+        <img src="./img/atom2.png" class="hero-right__decor reverse-rotate" />
+        <img src="./img/shine.png" class="hero-right__decor shine" />
       </div>
     </div>
     <button class="hero-btn">Купить</button>
-    <img class="hero__arrow" src="./img/arrow.png" alt="Прокрутите вниз">
+    <img class="hero__arrow" src="./img/arrow.png" alt="Прокрутите вниз" />
     <div class="hero__menu menu">
-      <img src="./img/omevit2x.png" alt="Логотип омевит" class="menu__logo">
+      <img src="./img/omevit2x.png" alt="Логотип омевит" class="menu__logo" />
       <nav class="menu__nav">
         <ul class="menu__list">
           <li class="menu__item">
@@ -164,14 +190,11 @@
           </li>
         </ul>
       </nav>
-      <button class="menu__btn">
-        Купить
-      </button>
+      <button class="menu__btn">Купить</button>
     </div>
   </div>
 </section>
-
-    <section class="about">
+ <section class="about">
   <div class="container">
     <h2 class="section-title about__title">
       Состав капсул
@@ -179,15 +202,29 @@
       <div class="tooltip-wrapper">
         <div class="tooltip">
           <button class="tooltip__marker">
-            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="19.5" cy="19.5" r="19.5" fill="#FFD500"/>
-              <path d="M19.4819 22.7732C19.4819 22.2888 19.2642 20.3579 20.868 19.1967C22.9174 17.6081 25.0245 16.863 25.0245 14.2779C25.0245 12.5187 23.7617 10.187 20.3984 10.014C17.5043 9.82107 14.7758 11.6471 14.8206 14.2779" stroke="#06167A" stroke-width="2.34"/>
-              <path d="M19.5001 29.4824C20.5339 29.4824 21.3721 28.6443 21.3721 27.6104C21.3721 26.5765 20.5339 25.7384 19.5001 25.7384C18.4662 25.7384 17.6281 26.5765 17.6281 27.6104C17.6281 28.6443 18.4662 29.4824 19.5001 29.4824Z" fill="#06167A"/>
+            <svg
+              width="39"
+              height="39"
+              viewBox="0 0 39 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="19.5" cy="19.5" r="19.5" fill="#FFD500" />
+              <path
+                d="M19.4819 22.7732C19.4819 22.2888 19.2642 20.3579 20.868 19.1967C22.9174 17.6081 25.0245 16.863 25.0245 14.2779C25.0245 12.5187 23.7617 10.187 20.3984 10.014C17.5043 9.82107 14.7758 11.6471 14.8206 14.2779"
+                stroke="#06167A"
+                stroke-width="2.34"
+              />
+              <path
+                d="M19.5001 29.4824C20.5339 29.4824 21.3721 28.6443 21.3721 27.6104C21.3721 26.5765 20.5339 25.7384 19.5001 25.7384C18.4662 25.7384 17.6281 26.5765 17.6281 27.6104C17.6281 28.6443 18.4662 29.4824 19.5001 29.4824Z"
+                fill="#06167A"
+              />
             </svg>
           </button>
         </div>
         <div class="tooltip__content">
-          Одна упаковка Омевит содержит два вида капсул. Всего 60 штук на 1 месяц применения
+          Одна упаковка Омевит содержит два вида капсул. Всего 60 штук на 1
+          месяц применения
         </div>
       </div>
     </h2>
@@ -195,229 +232,343 @@
       <div class="swiper-wrapper">
         <article class="about-top__card about-card swiper-slide">
           <span class="about-card__descr">
-            <div>КАПСУЛА А</div>
-            <span>500 МГ</span>
-            <span>30 КАПСУЛ</span>
+            <div data-aos="fade-up">КАПСУЛА А</div>
+            <span data-aos="fade-up">500 МГ</span>
+            <span data-aos="fade-up">30 КАПСУЛ</span>
           </span>
           <div class="d-flex">
             <div id="information">
-              <h3 class="about-card__title">ОМЕГА-3</h3>
+              <h3 class="about-card__title" data-aos="fade-up">ОМЕГА-3</h3>
               <ul class="about-card__list">
                 <li class="about-card__item">
-              <span class="about-card__marker">
-                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_153)">
-                  <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_1_153">
-                  <rect width="27" height="27" fill="white"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-              </span>
-                  <p class="about-card__text">
+                  <span class="about-card__marker">
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_153)">
+                        <path
+                          d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                          fill="#F71CFF"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_153">
+                          <rect width="27" height="27" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <p class="about-card__text fade-up" data-aos="fade-up">
                     Полиненасыщенные жирные&nbspкислоты
                   </p>
                 </li>
                 <li class="about-card__item">
-              <span class="about-card__marker">
-                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_153)">
-                  <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_1_153">
-                  <rect width="27" height="27" fill="white"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-
-              </span>
-                  <p class="about-card__text">
-                    Докозагексаеновая
-                    кислота&nbsp<span>DHA</span>
+                  <span class="about-card__marker">
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_153)">
+                        <path
+                          d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                          fill="#F71CFF"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_153">
+                          <rect width="27" height="27" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <p class="about-card__text" data-aos="fade-up">
+                    Докозагексаеновая кислота&nbsp<span>DHA</span>
                   </p>
                 </li>
                 <li class="about-card__item">
-              <span class="about-card__marker">
-                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_153)">
-                  <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_1_153">
-                  <rect width="27" height="27" fill="white"/>
-                  </clipPath>
-                  </defs>
-                </svg>
-
-              </span>
-                  <p class="about-card__text">
+                  <span class="about-card__marker">
+                    <svg
+                      width="27"
+                      height="27"
+                      viewBox="0 0 27 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_153)">
+                        <path
+                          d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                          fill="#F71CFF"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_153">
+                          <rect width="27" height="27" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <p class="about-card__text" data-aos="fade-up">
                     Эйкозапентаеновая кислота&nbsp<span>EPA</span>
                   </p>
                 </li>
               </ul>
             </div>
             <div id="illustration">
-              <svg width="95" height="107" viewBox="0 0 95 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="95"
+                height="107"
+                viewBox="0 0 95 107"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g clip-path="url(#clip0_0_1)">
-                  <path d="M68.788 10.2127C68.788 10.2127 72.913 6.16075 85.8855 2.6752C81.9045 -4.30876 57.2545 6.96135 54.295 6.64565C51.32 6.33625 6.7244 0.770227 0.735373 14.6891C-5.26895 28.6144 40.4745 36.1766 43.7995 36.9858C47.1245 37.795 44.2729 55.1435 61.88 54.8975C57.112 46.0547 56.448 44.4492 57.405 42.1734C57.405 42.1734 87.0555 57.0185 75.6805 66.2715C65.7285 73.6825 46.9739 79.0765 46.9739 79.0765C46.9739 79.0765 37.9045 82.561 31.4654 88.9845C39.0161 95.1185 33.3276 86.6905 33.3276 86.6905C33.3276 86.6905 27.3154 93.367 20.7966 106.395C30.0863 108.031 43.5763 87.572 54.2505 86.452C86.9565 84.8315 99.213 56.1085 93.0465 34.3608C86.859 12.6042 68.788 10.2127 68.788 10.2127Z" fill="white"/>
+                  <path
+                    d="M68.788 10.2127C68.788 10.2127 72.913 6.16075 85.8855 2.6752C81.9045 -4.30876 57.2545 6.96135 54.295 6.64565C51.32 6.33625 6.7244 0.770227 0.735373 14.6891C-5.26895 28.6144 40.4745 36.1766 43.7995 36.9858C47.1245 37.795 44.2729 55.1435 61.88 54.8975C57.112 46.0547 56.448 44.4492 57.405 42.1734C57.405 42.1734 87.0555 57.0185 75.6805 66.2715C65.7285 73.6825 46.9739 79.0765 46.9739 79.0765C46.9739 79.0765 37.9045 82.561 31.4654 88.9845C39.0161 95.1185 33.3276 86.6905 33.3276 86.6905C33.3276 86.6905 27.3154 93.367 20.7966 106.395C30.0863 108.031 43.5763 87.572 54.2505 86.452C86.9565 84.8315 99.213 56.1085 93.0465 34.3608C86.859 12.6042 68.788 10.2127 68.788 10.2127Z"
+                    fill="white"
+                  />
                 </g>
-                <rect x="15" y="10" width="11" height="11" rx="5.5" fill="black"/>
+                <rect
+                  x="15"
+                  y="10"
+                  width="11"
+                  height="11"
+                  rx="5.5"
+                  fill="black"
+                />
                 <defs>
                   <clipPath id="clip0_0_1">
-                    <rect width="95" height="106.5" fill="white"/>
+                    <rect width="95" height="106.5" fill="white" />
                   </clipPath>
                 </defs>
               </svg>
             </div>
           </div>
 
-          <button class="about-card__btn js-btn-a">Подробнее про состав</button>
+          <button class="about-card__btn js-btn-a" data-aos="fade-up">
+            Подробнее про состав
+          </button>
         </article>
         <article class="about-top__card about-card swiper-slide">
           <span class="about-card__descr">
-            <div>КАПСУЛА Б</div>
-            <span>500 МГ</span>
-            <span>30 КАПСУЛ</span>
+            <div data-aos="fade-up">КАПСУЛА Б</div>
+            <span data-aos="fade-up">500 МГ</span>
+            <span data-aos="fade-up">30 КАПСУЛ</span>
           </span>
-          <h3 class="about-card__title">Витамины и минералы</h3>
+          <h3 class="about-card__title" data-aos="fade-up">
+            Витамины и минералы
+          </h3>
           <ul class="about-card__list">
             <li class="about-card__item">
               <span class="about-card__marker">
-                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g clip-path="url(#clip0_1_153)">
-                  <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
+                    <path
+                      d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                      fill="#F71CFF"
+                    />
                   </g>
                   <defs>
-                  <clipPath id="clip0_1_153">
-                  <rect width="27" height="27" fill="white"/>
-                  </clipPath>
+                    <clipPath id="clip0_1_153">
+                      <rect width="27" height="27" fill="white" />
+                    </clipPath>
                   </defs>
                 </svg>
-
               </span>
-              <p class="about-card__text">
+              <p class="about-card__text" data-aos="fade-up">
                 Экстракты черники и&nbspвиноградной косточки
               </p>
             </li>
-            <li class="about-card__item">
+            <li class="about-card__item" data-aos="fade-up">
               <span class="about-card__marker">
-                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g clip-path="url(#clip0_1_153)">
-                  <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
+                    <path
+                      d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                      fill="#F71CFF"
+                    />
                   </g>
                   <defs>
-                  <clipPath id="clip0_1_153">
-                  <rect width="27" height="27" fill="white"/>
-                  </clipPath>
+                    <clipPath id="clip0_1_153">
+                      <rect width="27" height="27" fill="white" />
+                    </clipPath>
                   </defs>
                 </svg>
-
               </span>
-              <p class="about-card__text">
+              <p class="about-card__text" data-aos="fade-up">
                 Цитрусовые биофлавоноиды
               </p>
             </li>
             <li class="about-card__item">
               <span class="about-card__marker">
-                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g clip-path="url(#clip0_1_153)">
-                  <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
+                    <path
+                      d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                      fill="#F71CFF"
+                    />
                   </g>
                   <defs>
-                  <clipPath id="clip0_1_153">
-                  <rect width="27" height="27" fill="white"/>
-                  </clipPath>
+                    <clipPath id="clip0_1_153">
+                      <rect width="27" height="27" fill="white" />
+                    </clipPath>
                   </defs>
                 </svg>
-
               </span>
-              <p class="about-card__text">
+              <p class="about-card__text" data-aos="fade-up">
                 Лютеин
-                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g clip-path="url(#clip0_1_153)">
-                  <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
+                    <path
+                      d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                      fill="#F71CFF"
+                    />
                   </g>
                   <defs>
-                  <clipPath id="clip0_1_153">
-                  <rect width="27" height="27" fill="white"/>
-                  </clipPath>
+                    <clipPath id="clip0_1_153">
+                      <rect width="27" height="27" fill="white" />
+                    </clipPath>
                   </defs>
                 </svg>
                 Витамины
               </p>
             </li>
           </ul>
-          <button class="about-card__btn js-btn-b">И ещё 5 ингредиентов</button>
+          <button class="about-card__btn js-btn-b" data-aos="fade-up">
+            И ещё 5 ингредиентов
+          </button>
         </article>
       </div>
     </div>
     <div class="about-bottom">
-      <img class="bilberry right" src="img/bilberry.png" alt="bilberry">
+      <img class="bilberry right" src="img/bilberry.png" alt="bilberry" />
       <div class="about-bottom__left">
-        <img src="./img/capsule_1.png" alt="Капсулы">
-        <img src="./img/capsule_2.png" alt="Капсулы">
+        <img src="./img/capsule_1.png" alt="Капсулы" />
+        <img src="./img/capsule_2.png" alt="Капсулы" />
       </div>
       <div class="about-bottom__right bottom-content">
-        <p class="bottom-content__title">ОмеВит -</p>
+        <p
+          class="bottom-content__title"
+          style="animation: fade-bottom 1s ease-in"
+        >
+          ОмеВит -
+        </p>
         <ul class="bottom-content__list">
           <li class="bottom-content__item">
-            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1_153)">
-                <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
-                </g>
-                <defs>
+            <svg
+              width="27"
+              height="27"
+              viewBox="0 0 27 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_153)">
+                <path
+                  d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                  fill="#F71CFF"
+                />
+              </g>
+              <defs>
                 <clipPath id="clip0_1_153">
-                <rect width="27" height="27" fill="white"/>
+                  <rect width="27" height="27" fill="white" />
                 </clipPath>
-                </defs>
-              </svg>
-            <p class="bottom-content__text">
-              Удачно подобранный комплекс витаминов, аминокислот и микроэлементов, оказывающих выраженное положительное влияние на здоровье человека
+              </defs>
+            </svg>
+            <p class="bottom-content__text" data-aos="fade-up">
+              Удачно подобранный комплекс витаминов, аминокислот и
+              микроэлементов, оказывающих выраженное положительное влияние на
+              здоровье человека
             </p>
           </li>
           <li class="bottom-content__item">
-            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1_153)">
-                <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
-                </g>
-                <defs>
+            <svg
+              width="27"
+              height="27"
+              viewBox="0 0 27 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_153)">
+                <path
+                  d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                  fill="#F71CFF"
+                />
+              </g>
+              <defs>
                 <clipPath id="clip0_1_153">
-                <rect width="27" height="27" fill="white"/>
+                  <rect width="27" height="27" fill="white" />
                 </clipPath>
-                </defs>
-              </svg>
-            <p class="bottom-content__text">
-              Помогает поддерживать нормальное функционирование организма, поддерживает здоровье глаз, укрепляет иммунитет
+              </defs>
+            </svg>
+            <p class="bottom-content__text" data-aos="fade-up">
+              Помогает поддерживать нормальное функционирование организма,
+              поддерживает здоровье глаз, укрепляет иммунитет
             </p>
           </li>
           <li class="bottom-content__item">
-            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1_153)">
-                <path d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z" fill="#F71CFF"/>
-                </g>
-                <defs>
+            <svg
+              width="27"
+              height="27"
+              viewBox="0 0 27 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_153)">
+                <path
+                  d="M13.5023 0.519287C12.9181 5.29518 12.7234 8.32763 11.5781 10.289C9.70946 12.7187 6.47298 12.9505 0.519348 13.5023C6.37561 14.2117 9.54253 14.3647 11.4158 16.595C12.8161 18.5703 13.0526 21.6213 13.5023 26.4853C14.2674 20.1746 14.3833 16.9891 17.1515 15.1762C19.1175 14.2256 22.0526 14.017 26.4853 13.5023C20.9908 12.83 17.8053 12.6723 15.9042 10.9938C14.2999 9.08343 14.1283 5.90723 13.5023 0.519287Z"
+                  fill="#F71CFF"
+                />
+              </g>
+              <defs>
                 <clipPath id="clip0_1_153">
-                <rect width="27" height="27" fill="white"/>
+                  <rect width="27" height="27" fill="white" />
                 </clipPath>
-                </defs>
-              </svg>
-            <p class="bottom-content__text">
+              </defs>
+            </svg>
+            <p class="bottom-content__text" data-aos="fade-up">
               Является биологически активной добавкой
             </p>
           </li>
         </ul>
       </div>
-      <img class="bilberry left" src="img/bilberry.png">
+      <img class="bilberry left" src="img/bilberry.png" />
     </div>
   </div>
 </section>
 
-    <section class="testimony">
+      <section class="testimony">
   <div class="container">
-    <h2 class="section-title testimony__title" id="testimony">
+    <h2 class="section-title testimony__title" id="testimony" align="center">
       Показания к применению
       <span>ОмеВит</span>:
     </h2>
@@ -425,47 +576,59 @@
       <ul class="testimony-list">
         <li class="testimony-list__item">
           <div class="testimony-list__icon">
-            <img src="./img/sphere.png" alt="Иконка">
-            <span>
-              A
-            </span>
+            <img src="./img/sphere.png" alt="Иконка" />
+            <span> A </span>
           </div>
           <div class="testimony-list__card testimony-card">
             <h4 class="testimony-card__title">Дефицит витаминов</h4>
             <p class="testimony-card__descr">
-              Недостаточное поступление в организм с пищей витаминов и веществ, полезных для зрения
+              Недостаточное поступление в организм с пищей витаминов и веществ,
+              полезных для зрения
             </p>
           </div>
         </li>
         <li class="testimony-list__item">
           <div class="testimony-list__icon">
-            <img src="./img/sphere.png" alt="Иконка">
+            <img src="./img/sphere.png" alt="Иконка" />
             <span>
-              <svg width="50" height="31" viewBox="0 0 50 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="50"
+                height="31"
+                viewBox="0 0 50 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g clip-path="url(#clip0_1_282)">
-                <path d="M24.9039 0.942139C14.4339 0.942139 5.32923 6.51841 1.0605 14.7194L0.675928 15.4789L1.0605 16.2192C5.32923 24.4298 14.4339 30.0157 24.9039 30.0157C35.3738 30.0157 44.4785 24.4298 48.7472 16.2192L49.1318 15.4789L48.7472 14.7194C44.4785 6.51841 35.3738 0.942139 24.9039 0.942139ZM20.2794 4.59556C16.0876 6.41265 13.1552 10.6045 13.1552 15.4789C13.1552 20.3533 16.0972 24.5548 20.2794 26.3622C13.3187 25.0835 7.53089 20.959 4.3678 15.4789C7.53089 9.99877 13.3187 5.87425 20.2794 4.59556ZM29.5283 4.59556C36.489 5.87425 42.2768 9.99877 45.4399 15.4789C42.2768 20.959 36.489 25.0835 29.5187 26.3622C33.7105 24.5451 36.6429 20.3533 36.6429 15.4789C36.6525 10.6045 33.7105 6.40304 29.5283 4.59556Z" fill="white"/>
+                  <path
+                    d="M24.9039 0.942139C14.4339 0.942139 5.32923 6.51841 1.0605 14.7194L0.675928 15.4789L1.0605 16.2192C5.32923 24.4298 14.4339 30.0157 24.9039 30.0157C35.3738 30.0157 44.4785 24.4298 48.7472 16.2192L49.1318 15.4789L48.7472 14.7194C44.4785 6.51841 35.3738 0.942139 24.9039 0.942139ZM20.2794 4.59556C16.0876 6.41265 13.1552 10.6045 13.1552 15.4789C13.1552 20.3533 16.0972 24.5548 20.2794 26.3622C13.3187 25.0835 7.53089 20.959 4.3678 15.4789C7.53089 9.99877 13.3187 5.87425 20.2794 4.59556ZM29.5283 4.59556C36.489 5.87425 42.2768 9.99877 45.4399 15.4789C42.2768 20.959 36.489 25.0835 29.5187 26.3622C33.7105 24.5451 36.6429 20.3533 36.6429 15.4789C36.6525 10.6045 33.7105 6.40304 29.5283 4.59556Z"
+                    fill="white"
+                  />
                 </g>
                 <defs>
-                <clipPath id="clip0_1_282">
-                <rect width="49.9941" height="30.7656" fill="white" transform="translate(0.00292969)"/>
-                </clipPath>
+                  <clipPath id="clip0_1_282">
+                    <rect
+                      width="49.9941"
+                      height="30.7656"
+                      fill="white"
+                      transform="translate(0.00292969)"
+                    />
+                  </clipPath>
                 </defs>
-                </svg>
+              </svg>
             </span>
           </div>
           <div class="testimony-list__card testimony-card">
             <h4 class="testimony-card__title">Снижение зрения</h4>
             <p class="testimony-card__descr">
-              Усталость глаз. Активная нагрузка, связанная с длительным чтением, работой за компьютером
+              Усталость глаз. Активная нагрузка, связанная с длительным чтением,
+              работой за компьютером
             </p>
           </div>
         </li>
         <li class="testimony-list__item">
           <div class="testimony-list__icon">
-            <img src="./img/sphere.png" alt="Иконка">
-            <span>
-              60+
-            </span>
+            <img src="./img/sphere.png" alt="Иконка" />
+            <span> 60+ </span>
           </div>
           <div class="testimony-list__card testimony-card">
             <h4 class="testimony-card__title">Пожилой возраст</h4>
@@ -476,20 +639,40 @@
         </li>
         <li class="testimony-list__item">
           <div class="testimony-list__icon">
-            <img src="./img/sphere.png" alt="Иконка">
+            <img src="./img/sphere.png" alt="Иконка" />
             <span>
-              <svg width="33" height="50" viewBox="0 0 33 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="33"
+                height="50"
+                viewBox="0 0 33 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g clip-path="url(#clip0_1_292)">
-                <path d="M32.0099 19.1931V12.3158H30.4656H29.2091C28.8734 15.2604 26.8111 17.5337 24.3173 17.5337C21.5932 17.5337 19.3775 14.8192 19.3775 11.4813C19.3775 8.14334 21.5932 5.42887 24.3173 5.42887C26.8111 5.42887 28.8734 7.70212 29.2091 10.6468H32.0099V2.28277C30.4848 1.82237 25.5642 0.575439 16.4041 0.575439C7.24395 0.575439 2.32337 1.82237 0.798284 2.28277V10.6468H3.59908C3.93479 7.70212 5.99702 5.42887 8.49088 5.42887C11.2149 5.42887 13.4306 8.14334 13.4306 11.4813C13.4306 14.8192 11.2149 17.5337 8.49088 17.5337C5.99702 17.5337 3.93479 15.2604 3.59908 12.3158H0.798284V19.1931C0.798284 19.2122 0.798284 19.241 0.798284 19.2698C0.788692 19.3369 0.769508 19.6439 0.769508 20.1235C0.769508 22.5118 1.35461 29.1973 7.58925 31.8925L7.78109 31.7966C10.1023 30.684 13.1621 30.0605 16.4041 30.0605C19.6461 30.0605 22.7155 30.6744 25.0271 31.7966L25.2189 31.8925C31.4536 29.2069 32.0387 22.5214 32.0387 20.1235C32.0387 19.6439 32.0195 19.3369 32.0099 19.2698C32.0099 19.241 32.0099 19.2218 32.0099 19.1931Z" fill="white"/>
-                <path d="M23.8377 36.9378V33.1107C21.7947 32.2283 19.1953 31.7295 16.4041 31.7295C13.6129 31.7295 11.0135 32.2283 8.97046 33.1107V36.9378C11.1094 36.1225 13.6512 35.6525 16.4041 35.6525C19.1569 35.6525 21.6987 36.1129 23.8377 36.9378Z" fill="white"/>
-                <path d="M16.3465 37.0818C10.6778 37.0818 5.88192 39.7963 5.88192 42.9999C5.88192 46.2131 10.6682 48.918 16.3465 48.918C22.0153 48.918 26.8016 46.2036 26.8016 42.9999C26.8016 39.7963 22.0153 37.0818 16.3465 37.0818Z" fill="white"/>
+                  <path
+                    d="M32.0099 19.1931V12.3158H30.4656H29.2091C28.8734 15.2604 26.8111 17.5337 24.3173 17.5337C21.5932 17.5337 19.3775 14.8192 19.3775 11.4813C19.3775 8.14334 21.5932 5.42887 24.3173 5.42887C26.8111 5.42887 28.8734 7.70212 29.2091 10.6468H32.0099V2.28277C30.4848 1.82237 25.5642 0.575439 16.4041 0.575439C7.24395 0.575439 2.32337 1.82237 0.798284 2.28277V10.6468H3.59908C3.93479 7.70212 5.99702 5.42887 8.49088 5.42887C11.2149 5.42887 13.4306 8.14334 13.4306 11.4813C13.4306 14.8192 11.2149 17.5337 8.49088 17.5337C5.99702 17.5337 3.93479 15.2604 3.59908 12.3158H0.798284V19.1931C0.798284 19.2122 0.798284 19.241 0.798284 19.2698C0.788692 19.3369 0.769508 19.6439 0.769508 20.1235C0.769508 22.5118 1.35461 29.1973 7.58925 31.8925L7.78109 31.7966C10.1023 30.684 13.1621 30.0605 16.4041 30.0605C19.6461 30.0605 22.7155 30.6744 25.0271 31.7966L25.2189 31.8925C31.4536 29.2069 32.0387 22.5214 32.0387 20.1235C32.0387 19.6439 32.0195 19.3369 32.0099 19.2698C32.0099 19.241 32.0099 19.2218 32.0099 19.1931Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M23.8377 36.9378V33.1107C21.7947 32.2283 19.1953 31.7295 16.4041 31.7295C13.6129 31.7295 11.0135 32.2283 8.97046 33.1107V36.9378C11.1094 36.1225 13.6512 35.6525 16.4041 35.6525C19.1569 35.6525 21.6987 36.1129 23.8377 36.9378Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M16.3465 37.0818C10.6778 37.0818 5.88192 39.7963 5.88192 42.9999C5.88192 46.2131 10.6682 48.918 16.3465 48.918C22.0153 48.918 26.8016 46.2036 26.8016 42.9999C26.8016 39.7963 22.0153 37.0818 16.3465 37.0818Z"
+                    fill="white"
+                  />
                 </g>
                 <defs>
-                <clipPath id="clip0_1_292">
-                <rect width="32.9957" height="49.7812" fill="white" transform="translate(0.00216675)"/>
-                </clipPath>
+                  <clipPath id="clip0_1_292">
+                    <rect
+                      width="32.9957"
+                      height="49.7812"
+                      fill="white"
+                      transform="translate(0.00216675)"
+                    />
+                  </clipPath>
                 </defs>
-                </svg>
+              </svg>
             </span>
           </div>
           <div class="testimony-list__card testimony-card">
@@ -501,20 +684,40 @@
         </li>
         <li class="testimony-list__item">
           <div class="testimony-list__icon">
-            <img src="./img/sphere.png" alt="Иконка">
+            <img src="./img/sphere.png" alt="Иконка" />
             <span>
-              <svg width="35" height="46" viewBox="0 0 35 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="35"
+                height="46"
+                viewBox="0 0 35 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g clip-path="url(#clip0_1_300)">
-                <path d="M34.0586 4.86614C33.724 4.67493 33.2651 4.82789 33.0356 5.21987L25.722 17.8969C25.5021 18.2794 25.0145 18.4228 24.6416 18.2029C24.2688 17.983 24.1445 17.4954 24.3644 17.113L31.6781 4.44548C31.8884 4.08219 31.8024 3.64241 31.4964 3.46076C31.1809 3.27911 30.7603 3.43208 30.5499 3.79537L23.2363 16.4629C23.0164 16.8453 22.5288 16.9887 22.1559 16.7688C21.7831 16.5489 21.6588 16.0613 21.8787 15.6789L29.1924 3.01142C29.4027 2.64813 29.3167 2.20835 29.0107 2.0267C28.6952 1.84506 28.2746 1.99802 28.2172 2.09363L20.7506 15.0288C20.3777 15.6789 20.0431 15.5546 19.6702 15.3348C19.2974 15.1149 19.1731 14.6273 19.393 14.2449L26.7067 1.57737C26.9361 1.18539 26.8405 0.707371 26.5059 0.516163C26.1713 0.324955 25.7124 0.477921 25.4829 0.869897L16.9455 15.6789C16.1138 17.1225 16.4388 18.8817 17.6912 19.5987L18.1788 19.8759L5.60691 41.664C5.08109 42.5723 5.39658 43.7291 6.29526 44.2453C7.2035 44.7712 8.3603 44.4557 8.87656 43.557L21.4485 21.7785L21.936 22.0557C23.1789 22.7727 24.8711 22.1895 25.7028 20.7364L34.2594 5.92734C34.4888 5.53536 34.3932 5.05734 34.0586 4.86614Z" fill="white"/>
-                <path d="M12.4904 23.7097L13.9818 26.2432L16.2476 22.3139L4.3736 1.74951C1.15175 3.61379 0.042745 7.74387 1.90702 10.9657L9.92818 25.1916L12.4904 23.7097Z" fill="white"/>
-                <path d="M18.9628 27.0081L16.7161 30.8991L24.154 43.5571C24.6799 44.4653 25.8367 44.7712 26.7353 44.2454C27.6436 43.7196 27.9495 42.5628 27.4237 41.6641L18.9628 27.0081Z" fill="white"/>
+                  <path
+                    d="M34.0586 4.86614C33.724 4.67493 33.2651 4.82789 33.0356 5.21987L25.722 17.8969C25.5021 18.2794 25.0145 18.4228 24.6416 18.2029C24.2688 17.983 24.1445 17.4954 24.3644 17.113L31.6781 4.44548C31.8884 4.08219 31.8024 3.64241 31.4964 3.46076C31.1809 3.27911 30.7603 3.43208 30.5499 3.79537L23.2363 16.4629C23.0164 16.8453 22.5288 16.9887 22.1559 16.7688C21.7831 16.5489 21.6588 16.0613 21.8787 15.6789L29.1924 3.01142C29.4027 2.64813 29.3167 2.20835 29.0107 2.0267C28.6952 1.84506 28.2746 1.99802 28.2172 2.09363L20.7506 15.0288C20.3777 15.6789 20.0431 15.5546 19.6702 15.3348C19.2974 15.1149 19.1731 14.6273 19.393 14.2449L26.7067 1.57737C26.9361 1.18539 26.8405 0.707371 26.5059 0.516163C26.1713 0.324955 25.7124 0.477921 25.4829 0.869897L16.9455 15.6789C16.1138 17.1225 16.4388 18.8817 17.6912 19.5987L18.1788 19.8759L5.60691 41.664C5.08109 42.5723 5.39658 43.7291 6.29526 44.2453C7.2035 44.7712 8.3603 44.4557 8.87656 43.557L21.4485 21.7785L21.936 22.0557C23.1789 22.7727 24.8711 22.1895 25.7028 20.7364L34.2594 5.92734C34.4888 5.53536 34.3932 5.05734 34.0586 4.86614Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.4904 23.7097L13.9818 26.2432L16.2476 22.3139L4.3736 1.74951C1.15175 3.61379 0.042745 7.74387 1.90702 10.9657L9.92818 25.1916L12.4904 23.7097Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M18.9628 27.0081L16.7161 30.8991L24.154 43.5571C24.6799 44.4653 25.8367 44.7712 26.7353 44.2454C27.6436 43.7196 27.9495 42.5628 27.4237 41.6641L18.9628 27.0081Z"
+                    fill="white"
+                  />
                 </g>
                 <defs>
-                <clipPath id="clip0_1_300">
-                <rect width="34.991" height="45.125" fill="white" transform="translate(0.0045166)"/>
-                </clipPath>
+                  <clipPath id="clip0_1_300">
+                    <rect
+                      width="34.991"
+                      height="45.125"
+                      fill="white"
+                      transform="translate(0.0045166)"
+                    />
+                  </clipPath>
                 </defs>
-                </svg>
+              </svg>
             </span>
           </div>
           <div class="testimony-list__card testimony-card">
@@ -526,30 +729,80 @@
         </li>
         <li class="testimony-list__item">
           <div class="testimony-list__icon">
-            <img src="./img/sphere.png" alt="Иконка">
+            <img src="./img/sphere.png" alt="Иконка" />
             <span>
-              <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="48"
+                height="49"
+                viewBox="0 0 48 49"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g clip-path="url(#clip0_1_308)">
-                <path d="M24 37.5001C22.2136 37.5001 20.414 37.1268 18.7742 36.4602C17.2012 35.7937 15.7081 34.8205 14.5216 33.5541C13.2552 32.2876 12.362 30.8612 11.6155 29.3015C10.9489 27.6618 10.5757 25.8621 10.5757 24.0757C10.5757 22.2894 10.9489 20.4897 11.6155 18.8499C12.282 17.2769 13.2552 15.7838 14.5216 14.5974C15.7881 13.3976 17.2145 12.4377 18.7742 11.6912C20.414 11.0246 22.2136 10.6514 24 10.6514C25.7864 10.6514 27.586 11.0246 29.2258 11.6912C30.7988 12.3577 32.2919 13.3309 33.4784 14.5974C34.6782 15.8638 35.638 17.2902 36.3845 18.8499C37.0511 20.4897 37.4243 22.2894 37.4243 24.0757C37.4243 25.8621 37.0511 27.6618 36.3845 29.3015C35.718 30.8745 34.7448 32.3676 33.4784 33.5541C32.2119 34.8205 30.7855 35.7137 29.2258 36.4602C27.586 37.1268 25.7864 37.5001 24 37.5001Z" fill="white"/>
-                <path d="M24 0.999756C23.1068 0.999756 22.3603 1.82628 22.3603 2.94609C22.3603 3.98591 22.6536 7.71859 24 7.71859C25.3464 7.71859 25.6397 4.06589 25.6397 2.94609C25.6397 1.81295 24.8932 0.999756 24 0.999756Z" fill="white"/>
-                <path d="M24 47.1251C23.1068 47.1251 22.3603 46.2986 22.3603 45.1788C22.3603 44.1389 22.6536 40.4062 24 40.4062C25.3464 40.4062 25.6397 44.0589 25.6397 45.1788C25.6397 46.3119 24.8932 47.1251 24 47.1251Z" fill="white"/>
-                <path d="M12.4287 4.05251C11.6021 4.50577 11.3889 5.62557 11.9754 6.51875C12.4953 7.41193 14.5883 10.4781 15.7881 9.79818C16.9879 9.13163 15.4148 5.77221 14.8949 4.8657C14.375 3.98586 13.2552 3.61259 12.4287 4.05251Z" fill="white"/>
-                <path d="M35.5713 44.0723C34.7448 44.5256 33.705 44.1523 33.1851 43.2458C32.6652 42.3393 31.0921 38.9932 32.2919 38.3133C33.4917 37.6468 35.5713 40.6996 36.1046 41.5928C36.5445 42.4993 36.3179 43.6191 35.5713 44.0723Z" fill="white"/>
-                <path d="M3.99013 12.4911C3.53688 13.3176 3.91014 14.3574 4.81665 14.8773C5.70983 15.3973 9.06925 17.037 9.74913 15.8505C10.4157 14.6507 7.36288 12.5711 6.4697 12.0378C5.56319 11.5179 4.44339 11.7446 3.99013 12.4911Z" fill="white"/>
-                <path d="M44.0099 35.6338C43.5566 36.4603 42.4368 36.6736 41.5436 36.087C40.6504 35.5671 37.5843 33.4742 38.2642 32.2744C38.9307 31.0746 42.2902 32.6476 43.1967 33.1675C44.0765 33.7674 44.4498 34.8073 44.0099 35.6338Z" fill="white"/>
-                <path d="M0.937326 24.0623C0.937326 24.9555 1.76385 25.702 2.88366 25.702C4.00346 25.702 7.58951 25.4088 7.58951 24.0623C7.58951 22.7159 3.92348 22.4226 2.80367 22.4226C1.68386 22.4226 0.937326 23.1691 0.937326 24.0623Z" fill="white"/>
-                <path d="M47.0627 24.0623C47.0627 24.9555 46.2361 25.702 45.1163 25.702C43.9965 25.702 40.4105 25.4088 40.4105 24.0623C40.4105 22.7159 44.0632 22.4226 45.183 22.4226C46.3161 22.4226 47.0627 23.1691 47.0627 24.0623Z" fill="white"/>
-                <path d="M3.99013 35.6338C4.44339 36.4603 5.56319 36.6736 6.45637 36.087C7.34955 35.5671 10.4157 33.4742 9.7358 32.2744C9.06925 31.0746 5.70983 32.6476 4.80332 33.1675C3.92348 33.7674 3.55021 34.8073 3.99013 35.6338Z" fill="white"/>
-                <path d="M44.0099 12.4911C44.4631 13.3176 44.0899 14.3574 43.1833 14.8773C42.2902 15.3973 38.9307 17.037 38.2509 15.8505C37.5843 14.6507 40.6371 12.5711 41.5303 12.0378C42.4368 11.5179 43.5566 11.7446 44.0099 12.4911Z" fill="white"/>
-                <path d="M12.4287 44.0723C13.2552 44.5256 14.295 44.1523 14.8149 43.2458C15.3348 42.3393 16.9079 38.9932 15.7081 38.3133C14.5083 37.6468 12.4287 40.6996 11.8954 41.5928C11.4555 42.4993 11.6821 43.6191 12.4287 44.0723Z" fill="white"/>
-                <path d="M35.5713 4.05251C36.3979 4.50577 36.6111 5.62557 36.0246 6.51875C35.5047 7.41193 33.4117 10.4781 32.2119 9.79818C31.0121 9.13163 32.5852 5.77221 33.1051 4.8657C33.625 3.98586 34.7448 3.61259 35.5713 4.05251Z" fill="white"/>
+                  <path
+                    d="M24 37.5001C22.2136 37.5001 20.414 37.1268 18.7742 36.4602C17.2012 35.7937 15.7081 34.8205 14.5216 33.5541C13.2552 32.2876 12.362 30.8612 11.6155 29.3015C10.9489 27.6618 10.5757 25.8621 10.5757 24.0757C10.5757 22.2894 10.9489 20.4897 11.6155 18.8499C12.282 17.2769 13.2552 15.7838 14.5216 14.5974C15.7881 13.3976 17.2145 12.4377 18.7742 11.6912C20.414 11.0246 22.2136 10.6514 24 10.6514C25.7864 10.6514 27.586 11.0246 29.2258 11.6912C30.7988 12.3577 32.2919 13.3309 33.4784 14.5974C34.6782 15.8638 35.638 17.2902 36.3845 18.8499C37.0511 20.4897 37.4243 22.2894 37.4243 24.0757C37.4243 25.8621 37.0511 27.6618 36.3845 29.3015C35.718 30.8745 34.7448 32.3676 33.4784 33.5541C32.2119 34.8205 30.7855 35.7137 29.2258 36.4602C27.586 37.1268 25.7864 37.5001 24 37.5001Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M24 0.999756C23.1068 0.999756 22.3603 1.82628 22.3603 2.94609C22.3603 3.98591 22.6536 7.71859 24 7.71859C25.3464 7.71859 25.6397 4.06589 25.6397 2.94609C25.6397 1.81295 24.8932 0.999756 24 0.999756Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M24 47.1251C23.1068 47.1251 22.3603 46.2986 22.3603 45.1788C22.3603 44.1389 22.6536 40.4062 24 40.4062C25.3464 40.4062 25.6397 44.0589 25.6397 45.1788C25.6397 46.3119 24.8932 47.1251 24 47.1251Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.4287 4.05251C11.6021 4.50577 11.3889 5.62557 11.9754 6.51875C12.4953 7.41193 14.5883 10.4781 15.7881 9.79818C16.9879 9.13163 15.4148 5.77221 14.8949 4.8657C14.375 3.98586 13.2552 3.61259 12.4287 4.05251Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M35.5713 44.0723C34.7448 44.5256 33.705 44.1523 33.1851 43.2458C32.6652 42.3393 31.0921 38.9932 32.2919 38.3133C33.4917 37.6468 35.5713 40.6996 36.1046 41.5928C36.5445 42.4993 36.3179 43.6191 35.5713 44.0723Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M3.99013 12.4911C3.53688 13.3176 3.91014 14.3574 4.81665 14.8773C5.70983 15.3973 9.06925 17.037 9.74913 15.8505C10.4157 14.6507 7.36288 12.5711 6.4697 12.0378C5.56319 11.5179 4.44339 11.7446 3.99013 12.4911Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M44.0099 35.6338C43.5566 36.4603 42.4368 36.6736 41.5436 36.087C40.6504 35.5671 37.5843 33.4742 38.2642 32.2744C38.9307 31.0746 42.2902 32.6476 43.1967 33.1675C44.0765 33.7674 44.4498 34.8073 44.0099 35.6338Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M0.937326 24.0623C0.937326 24.9555 1.76385 25.702 2.88366 25.702C4.00346 25.702 7.58951 25.4088 7.58951 24.0623C7.58951 22.7159 3.92348 22.4226 2.80367 22.4226C1.68386 22.4226 0.937326 23.1691 0.937326 24.0623Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M47.0627 24.0623C47.0627 24.9555 46.2361 25.702 45.1163 25.702C43.9965 25.702 40.4105 25.4088 40.4105 24.0623C40.4105 22.7159 44.0632 22.4226 45.183 22.4226C46.3161 22.4226 47.0627 23.1691 47.0627 24.0623Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M3.99013 35.6338C4.44339 36.4603 5.56319 36.6736 6.45637 36.087C7.34955 35.5671 10.4157 33.4742 9.7358 32.2744C9.06925 31.0746 5.70983 32.6476 4.80332 33.1675C3.92348 33.7674 3.55021 34.8073 3.99013 35.6338Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M44.0099 12.4911C44.4631 13.3176 44.0899 14.3574 43.1833 14.8773C42.2902 15.3973 38.9307 17.037 38.2509 15.8505C37.5843 14.6507 40.6371 12.5711 41.5303 12.0378C42.4368 11.5179 43.5566 11.7446 44.0099 12.4911Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.4287 44.0723C13.2552 44.5256 14.295 44.1523 14.8149 43.2458C15.3348 42.3393 16.9079 38.9932 15.7081 38.3133C14.5083 37.6468 12.4287 40.6996 11.8954 41.5928C11.4555 42.4993 11.6821 43.6191 12.4287 44.0723Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M35.5713 4.05251C36.3979 4.50577 36.6111 5.62557 36.0246 6.51875C35.5047 7.41193 33.4117 10.4781 32.2119 9.79818C31.0121 9.13163 32.5852 5.77221 33.1051 4.8657C33.625 3.98586 34.7448 3.61259 35.5713 4.05251Z"
+                    fill="white"
+                  />
                 </g>
                 <defs>
-                <clipPath id="clip0_1_308">
-                <rect width="47.9917" height="48.125" fill="white" transform="translate(0.00415516)"/>
-                </clipPath>
+                  <clipPath id="clip0_1_308">
+                    <rect
+                      width="47.9917"
+                      height="48.125"
+                      fill="white"
+                      transform="translate(0.00415516)"
+                    />
+                  </clipPath>
                 </defs>
-                </svg>
+              </svg>
             </span>
           </div>
           <div class="testimony-list__card testimony-card">
@@ -562,10 +815,10 @@
       </ul>
     </div>
     <div class="testimony-bottom">
-      <img src="./img/stock-photo-skincare.png" alt="Девочка улыбается">
+      <img src="./img/stock-photo-skincare.png" alt="Девочка улыбается" />
       <div class="testimony-bottom__content">
         <h3 class="testimony-bottom__title">
-          Польза ОмеВит<br>
+          Польза ОмеВит<br />
           для вашего организма
         </h3>
         <ul class="testimony-bottom__list">
@@ -576,50 +829,59 @@
             <p class="testimony-bottom__text">Снижение усталости глаз</p>
           </li>
           <li class="testimony-bottom__item">
-            <p class="testimony-bottom__text">Снижение риска осложнений<br> миопии (близорукость)</p>
+            <p class="testimony-bottom__text">
+              Снижение риска осложнений<br />
+              миопии (близорукость)
+            </p>
           </li>
           <li class="testimony-bottom__item">
-            <p class="testimony-bottom__text">Улучшение функционального<br> состояния глаз</p>
+            <p class="testimony-bottom__text">
+              Улучшение функционального<br />
+              состояния глаз
+            </p>
           </li>
           <li class="testimony-bottom__item">
-            <p class="testimony-bottom__text">Повышение и укрепление<br> иммунитета</p>
+            <p class="testimony-bottom__text">
+              Повышение и укрепление<br />
+              иммунитета
+            </p>
           </li>
         </ul>
       </div>
     </div>
     <div class="testimony-mobile">
       <h3 class="testimony-mobile__title">
-        Польза <span>ОмеВит</span><br>
+        Польза <span>ОмеВит</span><br />
         для вашего
-        <br> организма
+        <br />
+        организма
       </h3>
       <ul class="testimony-mobile__list">
         <li class="testimony-mobile__item">
-          <img src="./img/mobile/test1.png">
+          <img src="./img/mobile/test1.png" />
           <p>Повышение остроты зрения</p>
         </li>
         <li class="testimony-mobile__item">
-          <img src="./img/mobile/test2.png">
+          <img src="./img/mobile/test2.png" />
           <p>Снижение усталости глаз</p>
         </li>
         <li class="testimony-mobile__item">
-          <img src="./img/mobile/test3.png">
+          <img src="./img/mobile/test3.png" />
           <p>Снижение риска осложнений миопии (близорукость)</p>
         </li>
         <li class="testimony-mobile__item">
-          <img src="./img/mobile/test4.png">
+          <img src="./img/mobile/test4.png" />
           <p>Улучшение функционального состояния глаз</p>
         </li>
         <li class="testimony-mobile__item">
-          <img src="./img/mobile/test5.png">
+          <img src="./img/mobile/test5.png" />
           <p>Повышение и укрепление иммунитета</p>
         </li>
       </ul>
     </div>
   </div>
 </section>
-
-    <section class="result">
+ <section class="result">
   <div class="container result-container">
     <h2 class="section-title result__title">
       Результат приёма <span>Омевит</span>:
@@ -746,7 +1008,7 @@
   </div>
 </section>
 
-    <section class="confidence">
+      <section class="confidence">
   <div class="container">
     <h2 class="section-title confidence__title">
       Почему <span>Омевиту</span> можно доверять:
@@ -823,52 +1085,75 @@
   </div>
 </section>
 
-    <section class="partners">
-  <div class="container">
-    <h2 class="section-title partners__title">
-      Где купить <span>ОмеВит</span>:
-    </h2>
-    <ul class="partners-list">
-      <li class="partners-item">
-        <a href="#" class="partners-item__link">
-          <img src="./img/Ozon.png" alt="логотип компании" class="partners-item__img">
-        </a>
-      </li>
-      <li class="partners-item">
-        <a href="#" class="partners-item__link">
-          <img src="./img/wb.png" alt="логотип компании" class="partners-item__img">
-        </a>
-      </li>
-      <li class="partners-item">
-        <a href="#" class="partners-item__link">
-          <img src="./img/yam.png" alt="логотип компании" class="partners-item__img">
-        </a>
-      </li>
-      <li class="partners-item">
-        <a href="#" class="partners-item__link">
-          <img src="./img/apt.png" alt="логотип компании" class="partners-item__img">
-        </a>
-      </li>
-      <li class="partners-item">
-        <a href="#" class="partners-item__link">
-          <img src="./img/zdrav.png" alt="логотип компании" class="partners-item__img">
-        </a>
-      </li>
-      <li class="partners-item">
-        <a href="#" class="partners-item__link">
-          <img src="./img/apt2.png" alt="логотип компании" class="partners-item__img">
-        </a>
-      </li>
-      <li class="partners-item">
-        <a href="#" class="partners-item__link">
-          <img src="./img/tuta.png" alt="логотип компании" class="partners-item__img">
-        </a>
-      </li>
-    </ul>
-  </div>
+      <section class="partners">
+  <h2 class="section-title partners__title">Где купить <span>ОмеВит</span>:</h2>
+  <ul class="partners-list">
+    <li class="partners-item">
+      <a href="#" class="partners-item__link">
+        <img
+          src="./img/Ozon.png"
+          alt="логотип компании"
+          class="partners-item__img"
+        />
+      </a>
+    </li>
+    <li class="partners-item">
+      <a href="#" class="partners-item__link">
+        <img
+          src="./img/wb.png"
+          alt="логотип компании"
+          class="partners-item__img"
+        />
+      </a>
+    </li>
+    <li class="partners-item">
+      <a href="#" class="partners-item__link">
+        <img
+          src="./img/yam.png"
+          alt="логотип компании"
+          class="partners-item__img"
+        />
+      </a>
+    </li>
+    <li class="partners-item">
+      <a href="#" class="partners-item__link">
+        <img
+          src="./img/apt.png"
+          alt="логотип компании"
+          class="partners-item__img"
+        />
+      </a>
+    </li>
+    <li class="partners-item">
+      <a href="#" class="partners-item__link">
+        <img
+          src="./img/zdrav.png"
+          alt="логотип компании"
+          class="partners-item__img"
+        />
+      </a>
+    </li>
+    <li class="partners-item">
+      <a href="#" class="partners-item__link">
+        <img
+          src="./img/apt2.png"
+          alt="логотип компании"
+          class="partners-item__img"
+        />
+      </a>
+    </li>
+    <li class="partners-item">
+      <a href="#" class="partners-item__link">
+        <img
+          src="./img/tuta.png"
+          alt="логотип компании"
+          class="partners-item__img"
+        />
+      </a>
+    </li>
+  </ul>
 </section>
-
-    <section class="feedback">
+ <section class="feedback">
   <div class="container">
     <h2 class="section-title feedback__title" id="feedback">
       Отзывы <span>Омевит</span>:
@@ -941,7 +1226,7 @@
   </div>
 </section>
 
-    <section class="contacts">
+      <section class="contacts">
   <div class="container contacts__container">
     <div class="contacts-card">
       <h3 class="contacts-card__title">Продлите молодость, здоровье и красоту</h3>
@@ -950,8 +1235,7 @@
     </div>
   </div>
 </section>
-
-    <section class="questions">
+ <section class="questions">
   <div class="container questions__container">
     <h2 class="questions__title" id="questions">Остались вопросы?</h2>
     <p class="questions__subtitle">Звонки по России — бесплатные</p>
@@ -1044,8 +1328,8 @@
   </div>
 </section>
 
-  </main>
-  <footer class="footer container">
+    </main>
+    <footer class="footer container">
   <div class="footer__container">
     <div class="footer-card">
       <div class="footer-card__left">
@@ -1149,8 +1433,7 @@
     </div>
   </div>
 </footer>
-
-  <div class="modal">
+ <div class="modal">
   <div class="capsule-card capsule-a">
     <div class="capsule-card__top">
       <h3 class="capsule-card__title">Состав капсулы А</h3>
@@ -1453,9 +1736,9 @@
   </div>
 </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
