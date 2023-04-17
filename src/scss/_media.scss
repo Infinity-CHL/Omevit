@@ -2,6 +2,9 @@
 @import "_variables.scss";
 
 @media (max-width: 1750px) {
+  .confidence {
+    width: 90%;
+  }
   .footer {
     &::before {
       width: 400px;
@@ -80,6 +83,8 @@
   }
 
   .confidence {
+    width: 90%;
+
     .confidence-card {
       padding: 100px 70px;
       background-size: 430px;
@@ -525,6 +530,7 @@
       }
 
       &__item {
+        justify-content: start;
         margin: 0;
         margin-bottom: 34px;
         min-height: 528px;
