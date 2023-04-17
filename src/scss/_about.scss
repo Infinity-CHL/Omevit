@@ -22,9 +22,18 @@
     padding-bottom: 150px;
     position: relative;
 
+    .swipe {
+      display: none;
+    }
+
     .swiper-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 50px;
+
+      .press {
+        align-self: start;
+      }
     }
 
     .about-card {
@@ -123,23 +132,9 @@
         background: linear-gradient(132deg, #ffc700 0%, #fff625 100%);
       }
 
-      &:nth-child(2) {
+      &:nth-child(3) {
         background: linear-gradient(235deg, #03c700 0%, #92ff5c 100%);
       }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50px;
-      left: 50%;
-      width: 241px;
-      height: 65px;
-      transform: translateX(-50%);
-      background-image: url(../img/press_for.svg);
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
     }
 
     &::after {

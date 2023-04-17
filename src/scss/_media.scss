@@ -47,13 +47,21 @@
     }
 
     .about-top {
-      &::before {
-        top: -85px;
+      .swiper-wrapper {
+        justify-content: normal;
+        gap: 0;
+      }
+      .swipe {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      .press {
+        display: none;
       }
 
       &::after {
-        width: 560px;
-        height: 520px;
+        background-image: none;
       }
     }
   }
@@ -306,15 +314,8 @@
     .about-top {
       overflow: visible;
 
-      .swiper-wrapper {
-        overflow-x: hidden;
-      }
-
-      &::before {
-        width: 344px;
-        height: 25px;
-        top: -50px;
-        background-image: url(../img/swipe.png);
+      #illustration {
+        display: none;
       }
 
       &::after {
