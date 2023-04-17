@@ -1,5 +1,5 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .footer {
   padding: 27px 0 20px;
@@ -72,11 +72,11 @@
 
   .images {
     display: flex;
-    justify-content: space-between;
+    gap: 350px;
     align-items: end;
 
     position: absolute;
-    top: 300px;
+    top: 350px;
     z-index: -1;
   }
 }
