@@ -3,6 +3,7 @@
 
 .about {
   padding: 32px;
+  overflow: hidden;
 
   &__title {
     margin-bottom: 50px;
@@ -28,6 +29,9 @@
     .about-card {
       padding: 14px 18px 38px 18px;
       max-width: 432px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
       border-radius: 30px;
 
       &:first-child .about-card__btn:hover {
@@ -221,7 +225,6 @@
 
     .tooltip {
       overflow: visible;
-
     }
   }
 }
