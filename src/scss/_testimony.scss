@@ -151,8 +151,15 @@
     }
 
     &__text {
+      position: relative;
+      right: 0;
+      transition: right ease 0.5s;
       font-size: 32px;
       line-height: 37px;
+
+      &:hover {
+        right: -30px;
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
 @import "mixin.scss";
 
 .feedback {
-  width: 80%;
+  width: 90%;
   padding-bottom: 55px;
 
   &__title {
@@ -14,11 +14,11 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
     .feedback-item {
       margin-bottom: 60px;
-      width: 48%;
+      width: 60%;
       max-width: 560px;
 
       &:nth-child(odd) {

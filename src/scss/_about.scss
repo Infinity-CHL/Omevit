@@ -19,8 +19,17 @@
   }
 
   .about-top {
+    display: flex;
+    justify-content: center;
+
     padding-bottom: 150px;
     position: relative;
+
+    .big-pill {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+    }
 
     .swipe {
       display: none;
@@ -135,22 +144,6 @@
       &:nth-child(3) {
         background: linear-gradient(235deg, #03c700 0%, #92ff5c 100%);
       }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -18px;
-      left: 50%;
-      width: 710px;
-      height: 663px;
-      transform: translateX(-50%);
-      background-image: url(../img/_1.png);
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      pointer-events: none;
-      z-index: 1;
     }
   }
 

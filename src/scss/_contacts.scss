@@ -1,5 +1,5 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .contacts {
   padding: 70px 0 100px;
@@ -10,6 +10,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .fruit {
+    position: absolute;
+
+    &.bilberry {
+      right: 100px;
+    }
+
+    &.grape {
+      right: 100px;
+      top: 85px;
+    }
+
+    &.limon {
+      left: 130px;
+    }
   }
 
   .contacts-card {
@@ -47,9 +64,9 @@
       font-size: 26px;
       line-height: 40px;
       color: $mainColor;
-      background-color: #FCF800;
+      background-color: #fcf800;
       border-radius: 30px;
-      transition: all .2s linear;
+      transition: all 0.2s linear;
 
       &:hover {
         background-color: #5dff54;
