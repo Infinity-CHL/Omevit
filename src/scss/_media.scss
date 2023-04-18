@@ -720,19 +720,15 @@
   .footer {
     .images {
       position: absolute;
-      bottom: -170px;
+      bottom: -180px;
 
       img:nth-child(1) {
         width: 100%;
       }
-    }
 
-    img:nth-child(1) {
-      position: absolute;
-    }
-
-    img:nth-child(2) {
-      display: none;
+      img:nth-child(2) {
+        display: none;
+      }
     }
 
     .footer-card {
