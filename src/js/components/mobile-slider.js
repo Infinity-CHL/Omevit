@@ -1,4 +1,3 @@
-
 const slider = document.querySelector('.about-top');
 
 let mySwiper;
@@ -8,7 +7,7 @@ function mobileSlider() {
 		mySwiper = new Swiper(slider, {
 			slidesPerView: 1,
 			spaceBetween: 20,
-      
+
       autoplay: {
         delay: 3000,
       },
