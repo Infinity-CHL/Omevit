@@ -1,7 +1,9 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .confidence {
+  width: 70%;
+
   &__title {
     margin-bottom: 30px;
   }
@@ -9,6 +11,10 @@
     @include clearListStyles;
 
     &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
       border-radius: 30px;
       box-shadow: 0px 1px 10px 7px rgba(163, 163, 163, 0.1);
 
@@ -19,9 +25,10 @@
   }
 
   .confidence-card {
+    height: 325px;
     position: relative;
-    padding: 100px 140px;
-    background-color: #E0F9FF;
+    padding: 50px 70px;
+    background-color: #e0f9ff;
 
     &:nth-child(odd) {
       padding-left: 50%;
@@ -34,7 +41,7 @@
     }
 
     &:nth-child(2) {
-      background-color: #FFDB94;
+      background-color: #ffdb94;
       background-image: url(../img/Anchous1.png);
       background-repeat: no-repeat;
       background-position: right center;
@@ -43,7 +50,7 @@
     &:nth-child(3) {
       padding-top: 47px;
       padding-bottom: 47px;
-      background-color: #B0E0E4;
+      background-color: #b0e0e4;
       background-image: url(../img/omevit.png);
       background-repeat: no-repeat;
       background-position: left center;
@@ -57,6 +64,7 @@
     }
 
     &__descr {
+      word-wrap: break-word;
       max-width: 440px;
       font-size: 22px;
       line-height: 29px;

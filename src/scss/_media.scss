@@ -1,7 +1,10 @@
-@import '_mixin.scss';
-@import '_variables.scss';
+@import "_mixin.scss";
+@import "_variables.scss";
 
 @media (max-width: 1750px) {
+  .confidence {
+    width: 90%;
+  }
   .footer {
     &::before {
       width: 400px;
@@ -42,18 +45,34 @@
   }
 
   .about {
+    padding: 20px;
+
     &__title {
-      margin-bottom: 100px;
+      margin-bottom: 30px;
+    }
+
+    .big-pill {
+      height: 60%;
     }
 
     .about-top {
-      &::before {
-        top: -85px;
+      .swiper-wrapper {
+        justify-content: normal;
+        gap: 0;
       }
 
-      &::after {
-        width: 560px;
-        height: 520px;
+      .press {
+        display: none;
+      }
+
+      &__card {
+        width: 60%;
+      }
+    }
+
+    .about-bottom {
+      .bilberry {
+        display: none;
       }
     }
   }
@@ -71,6 +90,8 @@
   }
 
   .confidence {
+    width: 90%;
+
     .confidence-card {
       padding: 100px 70px;
       background-size: 430px;
@@ -163,6 +184,7 @@
 @media (max-width: 768px) {
   .container {
     max-width: 405px;
+    margin: 0;
   }
 
   .menu {
@@ -172,7 +194,6 @@
   .header {
     padding-top: 0;
     .header-container {
-
       &__logo {
         padding-left: 19px;
         width: 56px;
@@ -189,7 +210,6 @@
   }
 
   .hero {
-
     .menu.fixed {
       display: none;
     }
@@ -208,7 +228,6 @@
       align-items: center;
 
       &__item {
-
         &:nth-child(3) span svg {
           width: 29px;
           height: 43px;
@@ -239,6 +258,10 @@
         }
       }
 
+      &__list {
+        padding: 0 30px;
+      }
+
       &__mobile {
         display: flex;
         justify-content: center;
@@ -247,7 +270,7 @@
       &__content {
         max-width: 350px;
         width: 100%;
-        font-size: 24.1401px;
+        font-size: 22px;
         line-height: 19px;
 
         & span {
@@ -263,7 +286,7 @@
         padding-right: 26px;
 
         &::before {
-        display: none;;
+          display: none;
         }
       }
     }
@@ -279,44 +302,19 @@
 
   .about {
     &__title {
-      margin-bottom: 70px;
+      margin-bottom: 30px;
       position: relative;
       font-size: 36px;
       line-height: 42px;
     }
 
-    .tooltip-wrapper {
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      & svg {
-        width: 68px;
-        height: 68px;
-        border-radius: 100%;
-        box-shadow: 0px -1px 12px 3px rgba(0, 0, 0, 0.25);
-      }
-
-      .tooltip {
-        &__content {
-          left: -450%;
-          top: 0;
-        }
-      }
-    }
-
     .about-top {
+      width: 80vw;
       overflow: visible;
+      gap: 10px;
 
-      .swiper-wrapper {
-        overflow-x: hidden;
-      }
-
-      &::before {
-        width: 344px;
-        height: 25px;
-        top: -50px;
-        background-image: url(../img/swipe.png);
+      #illustration {
+        display: none;
       }
 
       &::after {
@@ -325,7 +323,8 @@
       }
 
       .about-card {
-        font-family: 'TildaSansVF';
+        max-width: 330px;
+        font-family: "TildaSansVF";
 
         &__descr {
           & div {
@@ -358,9 +357,45 @@
       }
     }
 
+    .swipe {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .big-pill {
+      height: 50%;
+
+      bottom: 150px;
+      left: 180px;
+    }
+
+    .tooltip-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      & svg {
+        width: 68px;
+        height: 68px;
+        border-radius: 100%;
+        box-shadow: 0px -1px 12px 3px rgba(0, 0, 0, 0.25);
+      }
+
+      .tooltip {
+        &__content {
+          left: -450%;
+          top: 0;
+        }
+      }
+    }
+
     .about-bottom {
-      max-width: $card-mobile-width;
+      max-width: 100%;
       flex-direction: column-reverse;
+
+      &__left img:nth-child(2) {
+        margin-left: 130px;
+      }
 
       .bottom-content {
         padding: 34px 0 16px 15px;
@@ -376,6 +411,10 @@
   }
 
   .testimony {
+    .testimony-top {
+      margin-bottom: 30px;
+    }
+
     &__title {
       max-width: 306px;
       font-size: 36px;
@@ -438,6 +477,8 @@
   }
 
   .result {
+    margin-bottom: 60px;
+    padding: 0;
 
     &__title {
       margin-bottom: 28px;
@@ -462,7 +503,7 @@
         }
 
         &__descr {
-          font-family: 'TildaSansVF';
+          font-family: "TildaSansVF";
           font-size: 18px;
           line-height: 26px;
         }
@@ -526,6 +567,7 @@
       }
 
       &__item {
+        justify-content: start;
         margin: 0;
         margin-bottom: 34px;
         min-height: 528px;
@@ -545,10 +587,13 @@
 
     .partners-list {
       flex-direction: column;
+      gap: 0;
     }
   }
 
   .feedback {
+    padding-bottom: 0;
+
     &__title {
       font-size: 36px;
       line-height: 42px;
@@ -559,6 +604,7 @@
     }
 
     .feedback-item {
+      width: 100% !important;
 
       &__comment {
         font-size: 18px;
@@ -568,10 +614,27 @@
   }
 
   .contacts {
+    padding: 0;
+
+    .grape {
+      top: 30px !important;
+    }
+
+    .limon {
+      height: 90px !important;
+      top: 150px !important;
+      left: 30px !important;
+    }
+
+    .bilberry {
+      top: 150px !important;
+      right: 50px !important;
+    }
+
     .contacts-card {
-      padding: 336px 21px 53px;
+      padding: 250px 21px 53px;
       max-width: 336px;
-      font-family: 'TildaSansVF';
+      font-family: "TildaSansVF";
       text-align: left;
 
       &__title {
@@ -587,80 +650,85 @@
   }
 
   .questions {
-      &__title {
-        font-size: 34px;
-        line-height: 101.2%;
-      }
+    &__title {
+      font-size: 34px;
+      line-height: 101.2%;
+    }
 
-      &__subtitle {
-        max-width: 245px;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-      }
+    &__subtitle {
+      max-width: 245px;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+    }
 
-      &__tel {
-        display: none;
-      }
-
-      &__btn {
-        display: none;
-      }
-
-      .tel-mobile {
-        @include clearBtnStyles;
-        margin-bottom: 6px;
-        display: flex;
-        align-items: center;
-        padding: 23px 52px;
-        font-size: 24px;
-        line-height: 118.2%;
-        background-color:#ED552C;
-        border-radius: 80px;
-
-        & svg {
-          margin-right: 12px;
-        }
-      }
-
-      .mobile-btn {
-        @include clearBtnStyles;
-        margin-bottom: 22px;
-        display: flex;
-        align-items: center;
-        padding: 23px 52px;
-        font-size: 24px;
-        line-height: 118.2%;
-        background-color:#FFEA7F;
-        border-radius: 56px;
-
-        & svg {
-          margin-right: 12px;
-        }
-      }
-
-      &__list {
-        margin-bottom: 46px;
-        padding: 12px 19px;
-        max-width: 336px;
-      }
-
-      &__copyright {
-        margin-bottom: 22px;
-        max-width: 343px;
-        font-size: 18px;
-        line-height: 143%;
-        text-align: center;
-      }
-  }
-
-  .footer {
-    img:nth-child(1) {
+    &__tel {
       display: none;
     }
 
-    img:nth-child(2) {
+    &__btn {
       display: none;
+    }
+
+    .tel-mobile {
+      @include clearBtnStyles;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      padding: 23px 52px;
+      font-size: 24px;
+      line-height: 118.2%;
+      background-color: #ed552c;
+      border-radius: 80px;
+
+      & svg {
+        margin-right: 12px;
+      }
+    }
+
+    .mobile-btn {
+      @include clearBtnStyles;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      padding: 23px 52px;
+      font-size: 24px;
+      line-height: 118.2%;
+      background-color: #ffea7f;
+      border-radius: 56px;
+
+      & svg {
+        margin-right: 12px;
+      }
+    }
+
+    &__list {
+      margin-bottom: 46px;
+      padding: 12px 19px;
+      max-width: 336px;
+    }
+
+    &__copyright {
+      margin-bottom: 22px;
+      max-width: 343px;
+      font-size: 18px;
+      line-height: 143%;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    .images {
+      position: absolute;
+      bottom: -180px;
+
+      img:nth-child(1) {
+        width: 100%;
+      }
+
+      img:nth-child(2) {
+        display: none;
+      }
     }
 
     .footer-card {

@@ -1,11 +1,16 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .about {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
   padding: 32px;
   overflow: hidden;
 
   &__title {
+    align-self: center;
     margin-bottom: 50px;
 
     span {
@@ -17,13 +22,31 @@
     }
   }
 
+  .swipe {
+    display: none;
+  }
+
   .about-top {
+    display: flex;
+    justify-content: center;
+
     padding-bottom: 150px;
     position: relative;
 
+    .big-pill {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+    }
+
     .swiper-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 50px;
+
+      .press {
+        align-self: start;
+      }
     }
 
     .about-card {
@@ -58,7 +81,7 @@
           font-size: 19px;
           line-height: 20px;
           border-radius: 10px;
-          background-color: $whiteColor
+          background-color: $whiteColor;
         }
       }
 
@@ -110,69 +133,40 @@
         line-height: 31px;
         background: $whiteColor;
         border-radius: 30px;
-        transition: all .2s linear;
+        transition: all 0.2s linear;
 
         &:hover {
           color: $whiteColor;
-          background-color: #FF1414;
+          background-color: #ff1414;
         }
       }
 
       &:first-child {
-        background: linear-gradient(132deg, #FFC700 0%, #FFF625 100%);
+        background: linear-gradient(132deg, #ffc700 0%, #fff625 100%);
       }
 
-      &:nth-child(2) {
-        background: linear-gradient(235deg, #03C700 0%, #92FF5C 100%);
+      &:nth-child(3) {
+        background: linear-gradient(235deg, #03c700 0%, #92ff5c 100%);
       }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50px;
-      left: 50%;
-      width: 241px;
-      height: 65px;
-      transform: translateX(-50%);
-      background-image: url(../img/press_for.svg);
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -18px;
-      left: 50%;
-      width: 710px;
-      height: 663px;
-      transform: translateX(-50%);
-      background-image: url(../img/_1.png);
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      pointer-events: none;
-      z-index: 1;
     }
   }
 
   .about-bottom {
     display: flex;
+    justify-content: center;
     position: relative;
 
     .bilberry {
       position: absolute;
 
       &.right {
-        right: -400px;
+        right: -330px;
       }
 
       &.left {
         rotate: 180deg;
         bottom: 0;
-        left: -400px;
+        left: -330px;
       }
     }
 
@@ -193,7 +187,7 @@
     .bottom-content {
       padding: 34px 0 155px 55px;
       max-width: 820px;
-      font-family: 'TildaSans';
+      font-family: "TildaSans";
       background: $whiteColor;
       box-shadow: 0px 1px 10px 7px rgba(163, 163, 163, 0.1);
       border-radius: 30px;

@@ -1,6 +1,6 @@
-@import '_variables.scss';
-@import '_fonts.scss';
-@import 'mixin.scss';
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "mixin.scss";
 
 * {
   box-sizing: border-box;
@@ -12,12 +12,12 @@
 }
 
 html {
-  font-family: 'TildaSans', Arial, Helvetica, sans-serif;
+  font-family: "TildaSans", Arial, Helvetica, sans-serif;
 }
 
 body {
   position: relative;
-  background-color: #D2A0E6;
+  background-color: #d2a0e6;
   overflow-x: hidden;
 }
 
@@ -76,7 +76,7 @@ picture {
 .modal {
   .hidden.capsule-card {
     display: block;
-    animation: fadeIn .5s linear 1;
+    animation: fadeIn 0.5s linear 1;
   }
 }
 
@@ -116,7 +116,7 @@ picture {
     display: none;
     background-color: $whiteColor;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
     width: 280px;
     color: $mainColor;
     font-size: 14px;

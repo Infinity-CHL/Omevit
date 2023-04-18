@@ -1,5 +1,5 @@
-@import '_variables.scss';
-@import '_mixin.scss';
+@import "_variables.scss";
+@import "_mixin.scss";
 
 .result {
   padding: 90px 0;
@@ -37,7 +37,7 @@
       position: absolute;
       top: 14px;
       right: 12px;
-      background-color: #FFF9D9;
+      background-color: #fff9d9;
       border-radius: 100%;
     }
 
@@ -46,7 +46,7 @@
       font-weight: 700;
       font-size: 36px;
       line-height: 41px;
-      color: #FD350A;
+      color: #fd350a;
     }
 
     &__descr {
@@ -55,6 +55,5 @@
       line-height: 31px;
       color: $mainColor;
     }
-
   }
 }

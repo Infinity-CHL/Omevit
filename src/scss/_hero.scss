@@ -1,7 +1,8 @@
-@import 'variables.scss';
-@import 'mixin.scss';
+@import "variables.scss";
+@import "mixin.scss";
 
 .hero {
+  width: 100%;
   position: relative;
   padding-top: 35px;
 
@@ -18,7 +19,7 @@
 
     &__title {
       margin-bottom: 12px;
-      font-family: 'Circe';
+      font-family: "Circe";
       font-weight: 400;
       font-size: 62px;
       line-height: 68px;
@@ -27,13 +28,13 @@
       span {
         font-weight: 700;
         font-size: 85px;
-        color: #FF1414;
-        text-shadow: 0px 0px 10px #F4D7FF;
+        color: #ff1414;
+        text-shadow: 0px 0px 10px #f4d7ff;
       }
     }
 
     &__mobile {
-    display: none;
+      display: none;
     }
 
     &__list {
@@ -54,10 +55,10 @@
         font-weight: 800;
         font-size: 58px;
         line-height: 90px;
-        background-color: #D1F3FF;
+        background-color: #d1f3ff;
         box-shadow: 0px 1px 15px 7px rgba(163, 163, 163, 0.3);
         border-radius: 24px;
-        color: #FF1414;
+        color: #ff1414;
         z-index: 2;
       }
     }
@@ -70,12 +71,12 @@
       padding: 22px;
       display: flex;
       align-items: center;
-      font-family: 'TildaSansVF';
+      font-family: "TildaSansVF";
       font-weight: 600;
       font-size: 30px;
       line-height: 24px;
       color: $mainColor;
-      background-color: #D1F3FF;
+      background-color: #d1f3ff;
       border-radius: 24px;
       z-index: 1;
 
@@ -102,7 +103,7 @@
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         right: 10px;
         width: 67px;
@@ -113,14 +114,13 @@
       }
 
       &__first {
-        transform: translate(-33px, 19px)
+        transform: translate(-33px, 19px);
       }
 
       &__second {
         transform: translate(-45px, 14px);
       }
     }
-
   }
 
   .hero-right {
@@ -139,10 +139,6 @@
       z-index: -2;
     }
 
-    .rotate {
-      animation: rotate 40s linear infinite;
-    }
-
     .reverse-rotate {
       animation: reverse-rotate 40s linear 1s infinite;
     }
@@ -154,21 +150,29 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -170px;
       width: 925px;
       height: 417px;
-      background: linear-gradient(180deg, #D2A0E6 42.62%, rgba(210, 160, 230, 0) 100%);
+      background: linear-gradient(
+        180deg,
+        #d2a0e6 42.62%,
+        rgba(210, 160, 230, 0) 100%
+      );
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -235px;
       width: 925px;
       height: 417px;
-      background: linear-gradient(180deg, #D2A0E6 42.62%, rgba(210, 160, 230, 0) 100%);
+      background: linear-gradient(
+        180deg,
+        #d2a0e6 42.62%,
+        rgba(210, 160, 230, 0) 100%
+      );
       transform: rotate(-180deg);
     }
 
@@ -176,7 +180,7 @@
       animation: bounce 4s linear 1s infinite;
 
       &::before {
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         height: 100%;
@@ -197,15 +201,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFEA00;
+    background-color: #ffea00;
     border-radius: 40px;
-    font-family: 'TildaSansVF';
+    font-family: "TildaSansVF";
     font-weight: 600;
     font-size: 40px;
     line-height: 62px;
     color: $mainColor;
     z-index: 2;
-    transition: background-color .2s linear;
+    transition: background-color 0.2s linear;
 
     &:hover {
       background-color: $whiteColor;
@@ -226,10 +230,10 @@
     display: none;
     justify-content: space-between;
     align-items: center;
-    font-family: 'TildaSansVF';
-    background: rgba($color: $whiteColor, $alpha: .6);
+    font-family: "TildaSansVF";
+    background: rgba($color: $whiteColor, $alpha: 0.6);
     border-radius: 30px;
-    animation: menu-up .5s linear 1;
+    animation: menu-up 0.5s linear 1;
 
     &.fixed {
       width: 100%;
@@ -240,7 +244,7 @@
       transform: translateX(-50%);
       z-index: 999;
       backdrop-filter: blur(10px);
-      animation: menu-down .5s linear 1;
+      animation: menu-down 0.5s linear 1;
     }
 
     &__list {
@@ -264,9 +268,9 @@
       font-size: 14px;
       line-height: 22px;
       color: $whiteColor;
-      background-color: #ED552C;
+      background-color: #ed552c;
       border-radius: 40px;
-      transition: all .2s linear;
+      transition: all 0.2s linear;
 
       &:hover {
         background-color: $mainColor;
@@ -277,7 +281,7 @@
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -8px;
         width: 100%;
@@ -285,7 +289,7 @@
         background-color: $mainColor;
         opacity: 0;
         transform: translateY(-8px);
-        transition: all .2s linear;
+        transition: all 0.2s linear;
       }
 
       &:hover {
