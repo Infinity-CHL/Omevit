@@ -45,8 +45,14 @@
   }
 
   .about {
+    padding: 20px;
+
     &__title {
-      margin-bottom: 100px;
+      margin-bottom: 30px;
+    }
+
+    .big-pill {
+      height: 60%;
     }
 
     .about-top {
@@ -54,18 +60,19 @@
         justify-content: normal;
         gap: 0;
       }
-      .swipe {
-        display: block;
-        width: 100%;
-        margin-bottom: 25px;
-      }
 
       .press {
         display: none;
       }
 
-      &::after {
-        background-image: none;
+      &__card {
+        width: 60%;
+      }
+    }
+
+    .about-bottom {
+      .bilberry {
+        display: none;
       }
     }
   }
@@ -290,11 +297,30 @@
   }
 
   .about {
+    .about-top {
+      width: 80vw;
+
+      .about-card {
+        max-width: 330px;
+      }
+    }
     &__title {
-      margin-bottom: 70px;
+      margin-bottom: 30px;
       position: relative;
       font-size: 36px;
       line-height: 42px;
+    }
+
+    .swipe {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .big-pill {
+      height: 50%;
+
+      bottom: 150px;
+      left: 180px;
     }
 
     .tooltip-wrapper {
@@ -319,6 +345,7 @@
 
     .about-top {
       overflow: visible;
+      gap: 10px;
 
       #illustration {
         display: none;
@@ -364,7 +391,7 @@
     }
 
     .about-bottom {
-      max-width: $card-mobile-width;
+      max-width: 100%;
       flex-direction: column-reverse;
 
       .bottom-content {
@@ -381,6 +408,10 @@
   }
 
   .testimony {
+    .testimony-top {
+      margin-bottom: 30px;
+    }
+
     &__title {
       max-width: 306px;
       font-size: 36px;
@@ -443,6 +474,9 @@
   }
 
   .result {
+    margin-bottom: 60px;
+    padding: 0;
+
     &__title {
       margin-bottom: 28px;
       max-width: 292px;
@@ -550,10 +584,13 @@
 
     .partners-list {
       flex-direction: column;
+      gap: 0;
     }
   }
 
   .feedback {
+    padding-bottom: 0;
+
     &__title {
       font-size: 36px;
       line-height: 42px;
@@ -574,8 +611,25 @@
   }
 
   .contacts {
+    padding: 0;
+
+    .grape {
+      top: 30px !important;
+    }
+
+    .limon {
+      height: 90px !important;
+      top: 150px !important;
+      left: 30px !important;
+    }
+
+    .bilberry {
+      top: 150px !important;
+      right: 50px !important;
+    }
+
     .contacts-card {
-      padding: 50px 21px 53px;
+      padding: 250px 21px 53px;
       max-width: 336px;
       font-family: "TildaSansVF";
       text-align: left;
@@ -661,8 +715,13 @@
   }
 
   .footer {
+    .images {
+      position: absolute;
+      bottom: -170px;
+    }
+
     img:nth-child(1) {
-      display: none;
+      position: absolute;
     }
 
     img:nth-child(2) {
