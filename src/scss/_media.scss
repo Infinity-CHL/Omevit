@@ -258,6 +258,10 @@
         }
       }
 
+      &__list {
+        padding: 0 30px;
+      }
+
       &__mobile {
         display: flex;
         justify-content: center;
@@ -266,7 +270,7 @@
       &__content {
         max-width: 350px;
         width: 100%;
-        font-size: 24.1401px;
+        font-size: 22px;
         line-height: 19px;
 
         & span {
@@ -297,18 +301,60 @@
   }
 
   .about {
-    .about-top {
-      width: 80vw;
-
-      .about-card {
-        max-width: 330px;
-      }
-    }
     &__title {
       margin-bottom: 30px;
       position: relative;
       font-size: 36px;
       line-height: 42px;
+    }
+
+    .about-top {
+      width: 80vw;
+      overflow: visible;
+      gap: 10px;
+
+      #illustration {
+        display: none;
+      }
+
+      &::after {
+        left: 100%;
+        z-index: 1;
+      }
+
+      .about-card {
+        max-width: 330px;
+        font-family: "TildaSansVF";
+
+        &__descr {
+          & div {
+            font-size: 18.6548px;
+            line-height: 22px;
+          }
+
+          & span {
+            font-size: 14.7684px;
+            line-height: 16px;
+          }
+        }
+
+        &__title {
+          margin-bottom: 32px;
+          font-size: 50px;
+          line-height: 59px;
+        }
+
+        &__item {
+          font-size: 22px;
+          line-height: 26px;
+        }
+
+        &__btn {
+          padding: 13px 66px;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
     }
 
     .swipe {
@@ -343,56 +389,13 @@
       }
     }
 
-    .about-top {
-      overflow: visible;
-      gap: 10px;
-
-      #illustration {
-        display: none;
-      }
-
-      &::after {
-        left: 100%;
-        z-index: 1;
-      }
-
-      .about-card {
-        font-family: "TildaSansVF";
-
-        &__descr {
-          & div {
-            font-size: 18.6548px;
-            line-height: 22px;
-          }
-
-          & span {
-            font-size: 14.7684px;
-            line-height: 16px;
-          }
-        }
-
-        &__title {
-          margin-bottom: 32px;
-          font-size: 50px;
-          line-height: 59px;
-        }
-
-        &__item {
-          font-size: 22px;
-          line-height: 26px;
-        }
-
-        &__btn {
-          padding: 13px 66px;
-          font-size: 16px;
-          line-height: 24px;
-        }
-      }
-    }
-
     .about-bottom {
       max-width: 100%;
       flex-direction: column-reverse;
+
+      &__left {
+        margin-left: 130px;
+      }
 
       .bottom-content {
         padding: 34px 0 16px 15px;
