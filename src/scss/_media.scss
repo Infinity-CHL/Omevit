@@ -393,7 +393,7 @@
       max-width: 100%;
       flex-direction: column-reverse;
 
-      &__left {
+      &__left img:nth-child(2) {
         margin-left: 130px;
       }
 
@@ -721,6 +721,10 @@
     .images {
       position: absolute;
       bottom: -170px;
+
+      img:nth-child(1) {
+        width: 100%;
+      }
     }
 
     img:nth-child(1) {
