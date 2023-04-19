@@ -2,6 +2,7 @@
 @import "mixin.scss";
 
 .testimony {
+  width: 80%;
   padding: 32px 0;
   margin-bottom: 24px;
 
@@ -124,7 +125,7 @@
 
   .testimony-bottom {
     margin: 0 auto;
-    width: 80%;
+    width: 95%;
     padding: 57px 31px 62px 80px;
     display: flex;
     background-color: $whiteColor;

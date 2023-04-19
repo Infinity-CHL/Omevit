@@ -42,7 +42,7 @@
     .swiper-wrapper {
       display: flex;
       justify-content: center;
-      gap: 50px;
+      gap: 30px;
 
       .press {
         align-self: start;
@@ -160,13 +160,13 @@
       position: absolute;
 
       &.right {
-        right: -330px;
+        right: -230px;
       }
 
       &.left {
         rotate: 180deg;
         bottom: 0;
-        left: -330px;
+        left: -230px;
       }
     }
 
