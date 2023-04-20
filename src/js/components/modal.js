@@ -1,9 +1,8 @@
 const openModal = (btn, content) => {
   btn.addEventListener('click', () => {
+    document.body.classList.add('modal-open');
     document.querySelector('.modal').classList.add('active');
     content.classList.add('hidden');
-    const modal = document.querySelector(".modal");
-    console.log(modal.classList.contains('active'));
   })
 }
 
@@ -13,6 +12,7 @@ const closeModal = (content) => {
     if(e.target === modal) {
       modal.classList.remove('active');
       content.classList.remove('hidden');
+      document.body.classList.remove('modal-open');
     } else return;
   });
 };
