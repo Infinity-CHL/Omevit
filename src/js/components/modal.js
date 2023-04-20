@@ -2,6 +2,8 @@ const openModal = (btn, content) => {
   btn.addEventListener('click', () => {
     document.querySelector('.modal').classList.add('active');
     content.classList.add('hidden');
+    const modal = document.querySelector(".modal");
+    console.log(modal.classList.contains('active'));
   })
 }
 

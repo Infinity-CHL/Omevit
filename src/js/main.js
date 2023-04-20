@@ -10,4 +10,5 @@ anchors.forEach(function (anchor) {
   });
 });
 
+
 AOS.init();

@@ -177,7 +177,7 @@
     }
 
     &__content {
-      animation: bounce 4s linear 1s infinite;
+      animation: bounce 4s ease-in-out 1s infinite;
 
       &::before {
         content: "";
