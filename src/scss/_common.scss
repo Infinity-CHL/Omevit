@@ -71,6 +71,10 @@ picture {
   width: 1px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .modal {
   .hidden.capsule-card {
     display: block;
